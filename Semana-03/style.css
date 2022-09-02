@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto";
+}
+
+header {
+  height: 126px;
+  background: #aace9b;
+}
+
+.header-menu img {
+  position: absolute;
+  width: 45px;
+  height: 44.61px;
+  left: 46px;
+  top: 41px;
+}
+
+.header-search {
+  position: absolute;
+  width: 377px;
+  height: 36px;
+  left: 568px;
+  top: 45px;
+  background: #d8e7eb;
+  border: 1px solid #d6d6d6;
+  border-radius: 50px;
+  text-align: match-parent;
+}
+
+.header-search-icon {
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  left: 582px;
+  top: 54px;
+}
+
+.header-know-more-btn {
+  position: absolute;
+  display: none;
+  width: 85px;
+  height: 36px;
+  left: 1380px;
+  top: 45px;
+  background: #ff3e1d;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
