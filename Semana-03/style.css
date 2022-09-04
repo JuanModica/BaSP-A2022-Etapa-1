@@ -3,6 +3,7 @@ body {
 }
 
 header {
+  position: relative;
   height: 126px;
   background: #aace9b;
 }
@@ -17,22 +18,31 @@ header {
 
 .header-search {
   position: absolute;
-  width: 377px;
-  height: 36px;
+  width: 380px;
   left: 568px;
   top: 45px;
   background: #d8e7eb;
   border: 1px solid #d6d6d6;
   border-radius: 50px;
-  text-align: match-parent;
 }
 
-.header-search-icon {
+.header-search input {
+  position: relative;
+  width: 320px;
+  height: 36px;
+  left: 50px;
+  font-size: 20px;
+  background: #d8e7eb;
+  border: none;
+  outline: none;
+}
+
+.header-search-img {
   position: absolute;
-  width: 20px;
-  height: 19px;
-  left: 582px;
-  top: 54px;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 15px;
 }
 
 .header-know-more-btn {
@@ -46,4 +56,61 @@ header {
   border-radius: 5px;
   border: none;
   color: white;
+}
+
+nav {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  border-right: 2px solid #bfbfbf;
+}
+
+.nav-menu {
+  position: absolute;
+  padding-left: 55px;
+  top: 80px;
+}
+
+.nav-menu-underline {
+  position: absolute;
+  width: 100px;
+  height: 0px;
+  left: 55px;
+  top: 145px;
+  border: 2px solid #aace9b;
+}
+
+.nav,
+h2 {
+  position: relative;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #373867;
+}
+
+.nav-ul {
+  position: absolute;
+  height: 420px;
+  top: 150px;
+}
+
+.nav-ul li {
+  position: relative;
+  margin: 50% 55px 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+}
+.nav-ul a {
+text-decoration: none;
+color: #373867;
+}
+
+.nav-ul div {
+  position: absolute;
+  width: 400px;
+  border: 1px solid #bfbfbf;
 }
