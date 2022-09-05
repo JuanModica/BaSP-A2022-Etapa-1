@@ -5,7 +5,7 @@ body {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 1512px;
   height: 126px;
   background: #aace9b;
   z-index: 1;
@@ -156,12 +156,17 @@ h2 {
   padding-left: 20px;
 }
 
+main {
+  width: 1112px;
+  color: #373867;
+}
+
 .first-section {
   position: relative;
+  height: 500px;
   top: 126px;
   left: 400px;
-  padding: 85px 35px 95px 30px;
-  color: #373867;
+  padding: 85px 35px 0px 30px;
 }
 
 h1 {
@@ -206,4 +211,159 @@ h1 {
   position: absolute;
   top: 65px;
   right: 35px;
+}
+
+.second-section {
+  position: relative;
+  height: 400px;
+  left: 400px;
+  padding: 95px 0px 0px 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.second-section a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.features-underline,
+.why-underline {
+  position: relative;
+  width: 125px;
+  border: 2px solid #aace9b;
+  margin-top: 13px;
+}
+
+.features-img-tablet {
+  display: none;
+}
+
+.features-blocks {
+  position: relative;
+  display: flex;
+}
+
+.features-hours a {
+  position: relative;
+  display: flex;
+  margin: 30px 90px 65px 0px;
+}
+
+.features-hours figure {
+  margin-right: 70px;
+  padding: 30px;
+  border: 2px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-hours p {
+  padding: 36px 90px 0px 0px;
+}
+
+.features-reports a {
+  position: relative;
+  display: flex;
+  margin: 30px 90px 65px 0px;
+}
+
+.features-reports figure {
+  margin-right: 70px;
+  padding: 35px;
+  border: 2px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-reports p {
+  padding: 36px 90px 0px 0px;
+}
+
+.features-resource a {
+  position: relative;
+  display: flex;
+  margin: 30px 90px 65px 0px;
+}
+
+.features-resource figure {
+  margin-right: 70px;
+  padding: 35px;
+  border: 2px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-resource p {
+  padding: 36px 0px 0px 0px;
+  width: 190px;
+}
+
+.features-role a {
+  position: relative;
+  display: flex;
+  margin: 30px 90px 65px 0px;
+}
+
+.features-role figure {
+  margin-right: 70px;
+  padding: 30px;
+  border: 2px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-role p {
+  padding: 36px 90px 0px 0px;
+}
+
+.third-section {
+  position: relative;
+  height: 350px;
+  left: 400px;
+  padding: 95px 0px 0px 40px;
+}
+
+.why-underline {
+  width: 300px;
+}
+
+.why-info {
+  position: relative;
+  display: flex;
+}
+
+.why-info figure {
+  padding-top: 45px;
+}
+
+.why-info a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #373867;
+}
+
+.why-info ul {
+  list-style-image: url("../assets/img/why-vector.png");
+  padding-left: 100px;
+}
+
+.why-info li {
+  padding-top: 45px;
+}
+
+.fourth-section {
+  position: relative;
+  height: 500px;
+  left: 400px;
+  padding: 95px 0px 0px 40px;
+}
+
+.fourth-section div {
+  position: relative;
+  display: block;
 }
