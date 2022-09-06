@@ -91,6 +91,7 @@ nav {
 .nav,
 h2 {
   font-weight: 700;
+  color: #373867;
 }
 
 .nav-menu-ul {
@@ -231,6 +232,7 @@ h2 {
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
+  color: #373867;
 }
 
 .features-underline,
@@ -467,3 +469,44 @@ input[type="reset"] {
   display: flex;
   float: right;
 }
+
+.sixth-section {
+  position: relative;
+  width: 900px;
+  height: 270px;
+  left: 540px;
+  padding: 95px 0px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sixth-section-parts {
+  width: 215px;
+  height: 200px;
+}
+
+.sixth-section h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sixth-section a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #373867;
+}
+
+.sixth-section ul {
+  padding-top: 30px;
+}
+
+.sixth-section-vertical {
+  height: 200px;
+  border: 2px solid #909090;
+  background-color: #909090;
+}
+
