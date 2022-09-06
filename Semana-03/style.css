@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto";
   width: 1512px;
+  color: #373867;
+  background-color: white;
 }
 
 header {
@@ -62,21 +64,17 @@ header {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   width: 400px;
   height: 100%;
-  font-family: "Roboto";
   font-size: 30px;
   line-height: 35px;
-  border-right: 2px solid #bfbfbf;
-  background-color: white;
 }
 
 .nav-menu {
   position: relative;
   padding-left: 55px;
   top: 206px;
-  color: #373867;
 }
 
 .nav-menu-underline {
@@ -91,12 +89,11 @@ nav {
 .nav,
 h2 {
   font-weight: 700;
-  color: #373867;
 }
 
 .nav-menu-ul {
   position: absolute;
-  height: 420px;
+  height: 450px;
   top: 260px;
 }
 
@@ -123,6 +120,8 @@ h2 {
 .nav-contact-ul {
   position: relative;
   top: 720px;
+  width: 320px;
+  height: 300px;
   margin-left: 55px;
 }
 
@@ -158,15 +157,18 @@ h2 {
 }
 
 main {
+  position: relative;
   width: 1112px;
   color: #373867;
+  border-left: 3px solid #bfbfbf;
+  left: 400px;
+  top: 126px;
 }
 
 .first-section {
   position: relative;
+  display: flex;
   height: 500px;
-  top: 126px;
-  left: 400px;
   padding: 85px 35px 0px 30px;
 }
 
@@ -176,6 +178,10 @@ h1 {
   line-height: 56px;
   letter-spacing: 0.3em;
   padding-bottom: 35px;
+}
+
+.first-section div {
+  width: 600px;
 }
 
 .first-section h2 {
@@ -209,15 +215,12 @@ h1 {
 }
 
 .first-section img {
-  position: absolute;
-  top: 65px;
-  right: 35px;
+  float: right;
 }
 
 .second-section {
   position: relative;
   height: 400px;
-  left: 400px;
   padding: 95px 0px 0px 40px;
 }
 
@@ -232,7 +235,7 @@ h2 {
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
-  color: #373867;
+  color:#373867;
 }
 
 .features-underline,
@@ -327,7 +330,6 @@ h2 {
 .third-section {
   position: relative;
   height: 350px;
-  left: 400px;
   padding: 95px 0px 0px 40px;
 }
 
@@ -366,7 +368,6 @@ h2 {
   position: relative;
   width: 675px;
   height: 600px;
-  left: 400px;
   padding: 95px 0px 0px 40px;
 }
 .info-underline {
@@ -437,7 +438,6 @@ input[type="reset"] {
   position: relative;
   width: 1052px;
   height: 375px;
-  left: 400px;
   padding: 95px 0px 0px 40px;
 }
 
@@ -472,18 +472,20 @@ input[type="reset"] {
 
 .sixth-section {
   position: relative;
-  width: 900px;
-  height: 270px;
-  left: 540px;
-  padding: 95px 0px 0px 40px;
+  width: 1112px;
+  height: 250px;
+  padding: 60px 0px 0px 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .sixth-section-parts {
   width: 215px;
-  height: 200px;
+}
+
+.sixth-section-parts ul {
+  padding-top: 30px;
 }
 
 .sixth-section h3 {
@@ -500,9 +502,6 @@ input[type="reset"] {
   color: #373867;
 }
 
-.sixth-section ul {
-  padding-top: 30px;
-}
 
 .sixth-section-vertical {
   height: 200px;
@@ -512,9 +511,8 @@ input[type="reset"] {
 
 footer {
   position: relative;
-  width: 1112px;
+
   height: 280px;
-  left: 400px;
   margin-top: 60px;
   border-top: 3px solid #aace9b;
 }
@@ -533,12 +531,11 @@ footer {
 }
 
 .footer-info {
-  width: 609px;
+  width: 610px;
   height: 85px;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   margin: 0 auto;
-  color: #373867;
 }
