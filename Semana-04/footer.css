@@ -41,3 +41,36 @@ footer {
   font-size: 12px;
   line-height: 14px;
 }
+
+
+@media only screen and (min-width: 834px) {
+  footer {
+    margin-top: 35px;
+  }
+  
+  .footer-socials img {
+    padding: 55px 10px 40px 10px;
+  }
+  
+  .twitter,
+  .face {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .linkedin,
+  .instagram {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .github {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .footer-info {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
