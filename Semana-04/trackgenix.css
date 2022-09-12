@@ -1,0 +1,48 @@
+.first-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first-section h1,
+.first-section h2,
+.first-section p,
+.first-section img {
+  margin-top: 5px;
+}
+
+h1 {
+  width: 244px;
+  height: 47px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.first-section h2 {
+  width: 265px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #aace9b;
+}
+
+.first-section img {
+  width: 155px;
+  height: 144px;
+}
+
+.first-section p {
+  width: 283px;
+  height: 42px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  order: 2;
+}
+
+.first-section button {
+  display: none;
+}
