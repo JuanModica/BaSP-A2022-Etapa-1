@@ -58,7 +58,7 @@
 .buttons {
     display: flex;
     justify-content: flex-end;
-    margin-left: 150px;
+    margin-left: 126px;
 }
 
 input[type="submit"],
