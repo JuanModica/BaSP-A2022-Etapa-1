@@ -1,0 +1,134 @@
+.second-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.second-section h2 {
+  width: 55px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+
+.second-section a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.features-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.features-hours {
+  margin: 10px 102px 20px 0px;
+}
+
+.features-hours a {
+  display: flex;
+  align-items: center;
+}
+
+.features-hours figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-hours img {
+  width: 20px;
+  height: 20px;
+}
+
+.features-reports {
+  margin: 10px 70px 20px 0px;
+}
+
+.features-reports a {
+  display: flex;
+  align-items: center;
+}
+
+.features-reports figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-reports img {
+  width: 16px;
+  height: 16px;
+}
+
+.features-resource {
+  margin: 10px 70px 20px 0px;
+}
+
+.features-resource a {
+  display: flex;
+  align-items: center;
+}
+
+.features-resource figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-resource img {
+  width: 15px;
+  height: 15px;
+}
+
+.features-resource p {
+  width: 85px;
+  height: 30px;
+}
+
+.features-role {
+  margin: 10px 10px 20px 0px;
+}
+
+.features-role a {
+  display: flex;
+  align-items: center;
+}
+
+.features-role figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+.features-role img {
+  width: 16px;
+  height: 16px;
+}
