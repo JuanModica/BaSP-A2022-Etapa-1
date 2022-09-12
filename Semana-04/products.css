@@ -32,3 +32,32 @@
   line-height: 14px;
   padding-bottom: 5px;
 }
+
+@media only screen and (min-width: 834px) {
+  .sixth-section {
+    margin-top: 80px;
+  }
+  
+  .product {
+      padding-right: 80px;
+  }
+  
+  .company {
+      padding-right: 140px;
+  }
+  
+  .sixth-section h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .sixth-section ul {
+    margin-top: 40px;
+  }
+  
+  .sixth-section li {
+    font-size: 24px;
+    line-height: 28px;
+  }  
+}
