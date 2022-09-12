@@ -56,9 +56,9 @@
 }
 
 .buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 126px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 126px;
 }
 
 input[type="submit"],
@@ -75,11 +75,64 @@ input[type="reset"] {
 }
 
 input[type="submit"] {
-    color: #ffffff;
-    background: #aace9b;
+  color: #ffffff;
+  background: #aace9b;
+}
+
+input[type="reset"] {
+  color: #aace9b;
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 834px) {
+  .fourth-section {
+    margin-top: 60px;
   }
-  
+
+  .fourth-section h2 {
+    width: 365px;
+    height: 38px;
+    padding-bottom: 12px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .fourth-section form {
+    margin-top: 40px;
+  }
+
+  .fourth-section input[type="text"],
+  .fourth-section input[type="email"],
+  .fourth-section select,
+  .fourth-section textarea {
+    width: 745px;
+    margin-bottom: 30px;
+    padding: 10px 12px;
+    font-size: 24px;
+    line-height: 28px;
+    border: 2px solid #aace9b;
+  }
+
+  .fourth-section select {
+    width: 773px;
+  }
+
+  .fourth-section textarea {
+    height: 200px;
+  }
+
+  .buttons {
+    margin-left: 433px;
+  }
+
+  input[type="submit"],
   input[type="reset"] {
-    color: #aace9b;
-    background: #ffffff;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
   }
+}
