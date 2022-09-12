@@ -36,3 +36,39 @@
   height: 155px;
   margin-top: 20px;
 }
+
+@media only screen and (min-width: 834px) {
+  .fifth-section {
+    margin-top: 60px;
+  }
+
+  .fifth-section h2 {
+    width: 160px;
+    height: 35px;
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 15px;
+  }
+
+  .fifth-section div {
+    width: 742px;
+    height: 170px;
+    margin-top: 30px;
+  }
+
+  .fifth-section p {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .fifth-section p:nth-child(3) {
+    display: none;
+  }
+
+  .fifth-section img {
+    width: 320px;
+    height: 145px;
+    margin-top: 25px;
+  }
+}
