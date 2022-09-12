@@ -23,13 +23,17 @@
 
 .features-blocks {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+flex-direction: column;
+}
+
+.features-group {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .features-hours {
-  margin: 10px 102px 20px 0px;
+margin-right: 70px;
 }
 
 .features-hours a {
@@ -51,10 +55,6 @@
 .features-hours img {
   width: 20px;
   height: 20px;
-}
-
-.features-reports {
-  margin: 10px 70px 20px 0px;
 }
 
 .features-reports a {
@@ -79,7 +79,7 @@
 }
 
 .features-resource {
-  margin: 10px 69px 20px 0px;
+  margin-right: 37px;
 }
 
 .features-resource a {
@@ -106,10 +106,6 @@
 .features-resource p {
   width: 85px;
   height: 30px;
-}
-
-.features-role {
-  margin: 10px 10px 20px 0px;
 }
 
 .features-role a {
