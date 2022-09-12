@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+  background: #aace9b;
+}
+
+.header-menu {
+  margin-left: 10px;
+}
+
+.header-menu img {
+  width: 12px;
+  height: 10px;
+}
+
+.header-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 15px;
+  margin-left: 120px;
+  background: #fafbfd;
+  border: 1px solid #aace9b;
+  border-radius: 10px;
+}
+
+.header-search input {
+  width: 130px;
+  height: 15px;
+  font-size: 20px;
+  background: #fafbfd;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.header-search-img {
+  width: 12px;
+  height: 12px;
+  filter: invert(17%) sepia(20%) saturate(1151%) hue-rotate(204deg) brightness(95%) contrast(4%)
+}
