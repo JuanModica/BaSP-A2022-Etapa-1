@@ -1,0 +1,82 @@
+.fourth-section {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.fourth-section h2 {
+  width: 160px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+
+.fourth-section form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.fourth-section input[type="text"],
+.fourth-section input[type="email"],
+.fourth-section select,
+.fourth-section textarea {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
+  color: #aace9b;
+  border: 1px solid #aace9b;
+  border-radius: 4px;
+  outline: none;
+}
+
+::placeholder {
+  color: #aace9b;
+}
+
+.fourth-section select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(../assets/img/select.png);
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+}
+
+.fourth-section textarea {
+  height: 100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  position: relative;
+  width: 85px;
+  height: 35px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    background: #aace9b;
+  }
+  
+  input[type="reset"] {
+    color: #aace9b;
+    background: #ffffff;
+  }
