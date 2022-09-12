@@ -1,0 +1,47 @@
+.third-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.third-section h2 {
+  width: 133px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+
+.why-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-info figure {
+  padding-top: 20px;
+}
+
+.why-info img {
+  width: 130px;
+  height: 95px;
+}
+
+.why-info a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.why-info ul {
+    list-style-image: url("../assets/img/why-vector.png");
+  padding-left: 30px;
+}
+
+.why-info li {
+  padding-top: 20px;
+}
