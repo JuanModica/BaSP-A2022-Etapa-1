@@ -1,0 +1,38 @@
+.fifth-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.fifth-section h2 {
+  width: 70px;
+  height: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+.fifth-section div {
+  width: 331px;
+  height: 169px;
+  margin-top: 20px;
+}
+
+.fifth-section p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: justify;
+}
+
+.fifth-section figure {
+  align-self: center;
+}
+
+.fifth-section img {
+  width: 285px;
+  height: 155px;
+  margin-top: 20px;
+}

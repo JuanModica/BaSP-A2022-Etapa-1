@@ -16,6 +16,7 @@
 .fourth-section form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin-top: 15px;
 }
 
@@ -23,6 +24,7 @@
 .fourth-section input[type="email"],
 .fourth-section select,
 .fourth-section textarea {
+  width: 300px;
   margin-bottom: 10px;
   padding: 10px 12px;
   font-weight: 400;
@@ -40,6 +42,7 @@
 }
 
 .fourth-section select {
+  width: 326px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -55,7 +58,7 @@
 .buttons {
     display: flex;
     justify-content: flex-end;
-    margin-left: 15px;
+    margin-left: 150px;
 }
 
 input[type="submit"],
