@@ -46,3 +46,42 @@
 .why-info li {
   padding-top: 20px;
 }
+
+@media only screen and (min-width: 834px) {
+  .third-section {
+    margin-top: 70px;
+  }
+  
+  .third-section h2 {
+    width: 300px;
+    height: 33px;
+    padding-bottom: 15px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .why-info figure {
+    padding-top: 30px;
+  }
+  
+  .why-info img {
+    width: 300px;
+    height: 210px;
+    margin-left: 50px;
+  }
+  
+  .why-info a {
+    margin-left: 12px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  
+  .why-info ul {
+    padding-left: 55px;
+  }
+  
+  .why-info li {
+    padding-top: 25px;
+  }
+}
