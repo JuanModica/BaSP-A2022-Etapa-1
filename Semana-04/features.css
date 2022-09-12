@@ -23,7 +23,18 @@
 
 .features-blocks {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+}
+
+.features-blocks figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
 }
 
 .features-group {
@@ -33,23 +44,12 @@ flex-direction: column;
 }
 
 .features-hours {
-margin-right: 70px;
+  margin-right: 70px;
 }
 
 .features-hours a {
   display: flex;
   align-items: center;
-}
-
-.features-hours figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  border: 1px solid #aace9b;
-  border-radius: 5px;
 }
 
 .features-hours img {
@@ -60,17 +60,6 @@ margin-right: 70px;
 .features-reports a {
   display: flex;
   align-items: center;
-}
-
-.features-reports figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  border: 1px solid #aace9b;
-  border-radius: 5px;
 }
 
 .features-reports img {
@@ -85,17 +74,6 @@ margin-right: 70px;
 .features-resource a {
   display: flex;
   align-items: center;
-}
-
-.features-resource figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  border: 1px solid #aace9b;
-  border-radius: 5px;
 }
 
 .features-resource img {
@@ -113,18 +91,68 @@ margin-right: 70px;
   align-items: center;
 }
 
-.features-role figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  border: 1px solid #aace9b;
-  border-radius: 5px;
-}
-
 .features-role img {
   width: 16px;
   height: 16px;
+}
+
+@media only screen and (min-width: 834px) {
+  .second-section {
+    margin-top: 70px;
+  }
+
+  .second-section h2 {
+    width: 127px;
+    height: 36px;
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 13px;
+  }
+
+  .features-blocks figure {
+    width: 90px;
+    height: 90px;
+  }
+
+  .second-section a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .second-section p {
+    padding-left: 70px;
+  }
+
+  .features-group {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .features-hours {
+    margin-right: 90px;
+  }
+
+  .features-hours img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .features-reports img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .features-resource {
+    margin-right: 110px;
+  }
+
+  .features-resource img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .features-role img {
+    width: 36px;
+    height: 36px;
+  }
 }
