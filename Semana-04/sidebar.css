@@ -1,3 +1,76 @@
 nav {
-    display: none;
+  display: none;
+}
+
+@media only screen and (min-width: 1512px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-right: 2px solid #bfbfbf;
+  }
+
+  nav h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #aace9b;
+  }
+
+  .nav-menu {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  nav h2, .nav-menu-ul a, .nav-contact-ul li {
+    margin-left: 55px;
+  }
+
+  .nav-menu {
+    width: 80px;
+  }
+
+.nav-menu-ul li {
+    margin-top: 40px;
+}
+
+  .nav-contact {
+    width: 120px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .nav-menu-ul li {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #cdcccc;
+  }
+
+  .nav-contact-ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .nav-contact-ul img {
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
+  }
+
+  #nav-contact-address {
+    margin-left: 47px;
+  }
+
+  #nav-contact-address img {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+  }
 }
