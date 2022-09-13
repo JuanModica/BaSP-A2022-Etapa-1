@@ -15,6 +15,6 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * Click on Code, then on download ZIP.
 * Go to the ZIP and extract the files.
 * On Semana-04 folder open the index file in your browser.
-* Or you can follow this link <a href="https://juanmodica.github.io/BaSP-A2022-Etapa-1/Semana-04/">.
+* Or you can follow this <a href="https://juanmodica.github.io/BaSP-A2022-Etapa-1/Semana-04/">Link</a>.
 
 **Author: Juan Cruz Adolfo Módica**
