@@ -14,9 +14,15 @@
   padding-bottom: 5px;
   border-bottom: 2px solid #aace9b;
 }
-.fifth-section div {
+
+.fifth-section-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph {
   width: 331px;
-  height: 169px;
   margin-top: 20px;
 }
 
@@ -24,16 +30,19 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  text-align: justify;
+  text-align: center;
+}
+.fifth-section p:nth-child(3) {
+  display: none;
 }
 
 .fifth-section figure {
   align-self: center;
 }
 
-.fifth-section img {
-  width: 285px;
-  height: 155px;
+.fifth-section div img {
+  width: 180px;
+  height: 80px;
   margin-top: 20px;
 }
 
@@ -50,7 +59,7 @@
     padding-bottom: 15px;
   }
 
-  .fifth-section div {
+  .paragraph {
     width: 742px;
     height: 170px;
     margin-top: 30px;
@@ -66,9 +75,32 @@
     display: none;
   }
 
-  .fifth-section img {
+  .fifth-section div img {
     width: 320px;
     height: 145px;
     margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1512px) {
+  .fifth-section div img {
+    width: 455px;
+    height: 255px;
+  }
+
+  .fifth-section-group {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 300px;
+  }
+
+  .paragraph {
+    flex-direction: column;
+    width: 550px;
+  }
+
+  .fifth-section p {
+    text-align: start;
+    width: 560px;
   }
 }
