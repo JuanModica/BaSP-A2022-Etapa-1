@@ -8,6 +8,7 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * HTML - Markup language - Week 02 - Used for page structure
 * CSS - Stylesheet language - Week 03 - Used for page style
 * CSS/Flexbox - Stylesheet language - Week 04 - Used for page styling and positioning
+* GitHub Pages - Hosting - Week 04 - Used for online visualization of the project.
 
 ## HOW TO USE
 
