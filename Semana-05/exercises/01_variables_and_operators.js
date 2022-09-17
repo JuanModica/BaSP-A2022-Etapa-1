@@ -16,8 +16,8 @@ console.log('--EXERCISE 1: VARIABLES AND OPERATORS');
 
  console.log('\n-Exercise 1.b:');
 
- var word1 = 'Hello';
- var word2 = 'World';
+ var word1 = 'hello';
+ var word2 = 'world';
  var text = word1 + ' ' + word2;
 
  console.log('El resultado: ', text);
@@ -27,9 +27,9 @@ console.log('--EXERCISE 1: VARIABLES AND OPERATORS');
 
  console.log('\n-Exercise 1.c:');
 
- var word1 = 'Otorrino';
- var word2 = 'naringologo';
- var sumWords = word1.length + word2.length;
+ var word3 = 'otorrino';
+ var word4 = 'naringologo';
+ var sumWords = word3.length + word4.length;
 
  console.log('El resultado: ', sumWords);
 
