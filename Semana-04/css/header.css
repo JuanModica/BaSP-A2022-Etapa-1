@@ -36,8 +36,8 @@ header {
 }
 
 .header-search-img {
-  width: 3%;
-  margin-left: 8px;
+  width: 4%;
+  margin-left: 5px;
   filter: invert(17%) sepia(20%) saturate(1151%) hue-rotate(204deg)
     brightness(95%) contrast(4%);
 }
