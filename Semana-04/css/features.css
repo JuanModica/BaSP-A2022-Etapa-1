@@ -1,158 +1,79 @@
-.second-section {
-  display: flex;
-  flex-direction: column;
+.features {
   margin-top: 40px;
   margin-left: 30px;
 }
 
-.second-section h2 {
-  width: 55px;
-  height: 16px;
+.features-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.features-hours,
+.features-reports,
+.features-resource,
+.features-role {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+
+.features-hours,
+.features-reports {
+  margin-bottom: 30px;
+}
+
+.features h2 {
+  width: fit-content;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   padding-bottom: 5px;
   border-bottom: 2px solid #aace9b;
 }
 
-.second-section a {
+.features a {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
 }
 
-.features-blocks {
-  display: flex;
-  flex-direction: column;
-}
-
-.features-blocks figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
+.features-blocks img {
+  width: 4.8vw;
+  padding: 3vw;
   margin-right: 5px;
   border: 1px solid #aace9b;
   border-radius: 5px;
 }
 
-.features-group {
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.features-hours {
-  margin-right: 70px;
-}
-
-.features-hours a {
-  display: flex;
-  align-items: center;
-}
-
-.features-hours img {
-  width: 20px;
-  height: 20px;
-}
-
-.features-reports a {
-  display: flex;
-  align-items: center;
-}
-
-.features-reports img {
-  width: 16px;
-  height: 16px;
-}
-
-.features-resource {
-  margin-right: 37px;
-}
-
-.features-resource a {
-  display: flex;
-  align-items: center;
-}
-
-.features-resource img {
-  width: 15px;
-  height: 15px;
-}
-
-.features-resource p {
-  width: 85px;
-  height: 30px;
-}
-
-.features-role a {
-  display: flex;
-  align-items: center;
-}
-
-.features-role img {
-  width: 16px;
-  height: 16px;
+h3 {
+  font-weight: 700;
+  line-height: 0.875rem;
+  margin-left: 5px;
 }
 
 @media only screen and (min-width: 834px) {
-  .second-section {
+  .features {
     margin-top: 70px;
   }
 
-  .second-section h2 {
-    width: 127px;
-    height: 36px;
-    font-size: 32px;
-    line-height: 38px;
-    padding-bottom: 13px;
+  .features h2 {
+    font-size: 2rem;
+    line-height: 2.375rem
   }
 
-  .features-blocks figure {
-    width: 90px;
-    height: 90px;
+  .features-hours,
+  .features-reports {
+    margin-bottom: 65px;
   }
 
-  .second-section a {
-    font-size: 24px;
-    line-height: 28px;
+  .features-blocks img {
+    margin-right: 77px;
   }
 
-  .second-section p {
-    padding-left: 70px;
-  }
-
-  .features-group {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-
-  .features-hours {
-    margin-right: 90px;
-  }
-
-  .features-hours img {
-    width: 37px;
-    height: 37px;
-  }
-
-  .features-reports img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .features-resource {
-    margin-right: 110px;
-  }
-
-  .features-resource img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .features-role img {
-    width: 36px;
-    height: 36px;
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
