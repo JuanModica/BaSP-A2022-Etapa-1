@@ -73,7 +73,9 @@
   .trackgenix {
     flex-wrap: wrap;
     height: 550px;
+    margin-left: 30px;
     align-items: flex-start;
+    align-content: flex-start;
   }
 
   .trackgenix h1,
@@ -93,11 +95,6 @@
     font-size: 1.5rem;
     line-height: 1.75;
     text-transform: uppercase;
-  }
-
-  .trackgenix img {
-    width: 30.4vw;
-    margin-right: 35px;
   }
 
   .trackgenix p {

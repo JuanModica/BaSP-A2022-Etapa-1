@@ -1,19 +1,18 @@
-nav {
+aside {
   display: none;
 }
 
 @media only screen and (min-width: 1512px) {
-  nav {
+  aside {
     display: flex;
     flex-direction: column;
-    width: 400px;
     border-right: 2px solid #bfbfbf;
   }
 
-  nav h2 {
+  aside h2 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.2rem;
     padding-bottom: 30px;
     border-bottom: 3px solid #aace9b;
   }
@@ -23,12 +22,12 @@ nav {
     margin-bottom: 60px;
   }
 
-  nav h2, .nav-menu-ul a, .nav-contact-ul li {
+  aside h2, .nav-menu-ul a, .nav-contact-ul li {
     margin-left: 55px;
   }
 
   .nav-menu {
-    width: 80px;
+    width: fit-content;
   }
 
 .nav-menu-ul li {
@@ -36,15 +35,15 @@ nav {
 }
 
   .nav-contact {
-    width: 120px;
+    width: fit-content;
     margin-top: 40px;
     margin-bottom: 60px;
   }
 
   .nav-menu-ul li {
     font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.2rem;
     padding-bottom: 35px;
     border-bottom: 2px solid #cdcccc;
   }
@@ -54,14 +53,13 @@ nav {
     align-items: center;
     padding-bottom: 20px;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 1.625rem;
+    line-height: 1.875rem;
   }
 
   .nav-contact-ul img {
-    width: 30px;
-    height: 30px;
-    padding-right: 30px;
+    width: 2vw;
+    padding-right: 25px;
   }
 
   #nav-contact-address {
@@ -69,8 +67,7 @@ nav {
   }
 
   #nav-contact-address img {
-    width: 50px;
-    height: 50px;
-    padding-right: 20px;
+    width: 3.3vw;
+    padding-right: 12px;
   }
 }

@@ -41,7 +41,7 @@
 }
 
 .ask-for select {
-  min-width: 78.75vw;
+  width: 78.75vw;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -110,7 +110,7 @@ input[type="reset"] {
   }
 
   .ask-for select {
-    min-width: 92vw;
+    width: 92vw;
   }
 
   .ask-for textarea {
@@ -130,4 +130,26 @@ input[type="reset"] {
     font-size: 1rem;
     line-height: 1.125rem;
   }
+}
+
+@media only screen and (min-width: 1512px) {
+  .ask-for input[type="text"],
+  .ask-for input[type="email"],
+  .ask-for textarea {
+    width: 43.6vw;
+  }
+
+  .ask-for select {
+    width: 45.5vw;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 9vw;
+    height: 50px;
+  }
+
+  .buttons {
+    width: 63%;
+}
 }

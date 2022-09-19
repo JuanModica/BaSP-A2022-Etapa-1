@@ -76,6 +76,7 @@
 @media only screen and (min-width: 1512px) {
   .our-history div img {
     width: 31vw;
+    margin-left: 35px;
   }
 
   .our-history-group {

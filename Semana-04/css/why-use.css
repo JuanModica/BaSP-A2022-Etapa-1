@@ -76,3 +76,13 @@
     padding-top: 25px;
   }
 }
+
+@media only screen and (min-width: 1512px) {
+.why-info {
+  justify-content: flex-start;
+}
+
+.why-info ul {
+  margin-left: 100px;
+}
+}
