@@ -1,14 +1,14 @@
-.sixth-section {
+.products {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
 }
 
-.sixth-section-parts {
+.products-parts {
   border-right: 1px solid #373867;
 }
 
-.product {
+.products {
     padding-right: 15px;
 }
 
@@ -16,25 +16,25 @@
     padding-right: 30px;
 }
 
-.sixth-section h3 {
+.products h3 {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
-.sixth-section ul {
-  margin-top: 15px;
+.products ul {
+  margin: 15px 15px 0px 0px;
 }
 
-.sixth-section li {
+.products li {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   padding-bottom: 5px;
 }
 
 @media only screen and (min-width: 834px) {
-  .sixth-section {
+  .products {
     margin-top: 80px;
   }
   
@@ -46,25 +46,25 @@
       padding-right: 140px;
   }
   
-  .sixth-section h3 {
+  .products h3 {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.75rem;
+    line-height: 2rem;
   }
   
-  .sixth-section ul {
+  .products ul {
     margin-top: 40px;
   }
   
-  .sixth-section li {
-    font-size: 24px;
-    line-height: 28px;
+  .products li {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }  
 }
 
 
 @media only screen and (min-width: 1512px) {
-  .sixth-section {
+  .products {
     margin-top: 165px;
   }
 }

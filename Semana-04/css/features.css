@@ -47,7 +47,7 @@
   border-radius: 5px;
 }
 
-h3 {
+.features h3 {
   font-weight: 700;
   line-height: 0.875rem;
   margin-left: 5px;
@@ -76,7 +76,7 @@ h3 {
     margin-right: 77px;
   }
 
-  h3 {
+  .features h3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
