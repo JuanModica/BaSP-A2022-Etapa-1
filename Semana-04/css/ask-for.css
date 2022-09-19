@@ -1,35 +1,34 @@
-.fourth-section {
+.ask-for {
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.fourth-section h2 {
-  width: 160px;
-  height: 16px;
+.ask-for h2 {
+  width: fit-content;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   padding-bottom: 5px;
   border-bottom: 2px solid #aace9b;
 }
 
-.fourth-section form {
+.ask-for form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 15px;
 }
 
-.fourth-section input[type="text"],
-.fourth-section input[type="email"],
-.fourth-section select,
-.fourth-section textarea {
-  width: 300px;
+.ask-for input[type="text"],
+.ask-for input[type="email"],
+.ask-for select,
+.ask-for textarea {
+  width: 72.5vw;
   margin-bottom: 10px;
   padding: 10px 12px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   opacity: 0.5;
   color: #aace9b;
   border: 1px solid #aace9b;
@@ -41,8 +40,8 @@
   color: #aace9b;
 }
 
-.fourth-section select {
-  width: 326px;
+.ask-for select {
+  min-width: 75.75vw;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -51,25 +50,24 @@
   background-position: right 15px top 50%;
 }
 
-.fourth-section textarea {
+.ask-for textarea {
   height: 100px;
 }
 
 .buttons {
   display: flex;
   justify-content: flex-end;
-  margin-left: 126px;
+  width: 90%;
 }
 
 input[type="submit"],
 input[type="reset"] {
-  position: relative;
-  width: 85px;
+  width: 25vw;
   height: 35px;
   margin-left: 15px;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   border: 1px solid #aace9b;
   border-radius: 5px;
 }
@@ -85,54 +83,51 @@ input[type="reset"] {
 }
 
 @media only screen and (min-width: 834px) {
-  .fourth-section {
+  .ask-for {
     margin-top: 60px;
   }
 
-  .fourth-section h2 {
-    width: 365px;
-    height: 38px;
+  .ask-for h2 {
     padding-bottom: 12px;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.375rem;
   }
 
-  .fourth-section form {
+  .ask-for form {
     margin-top: 40px;
   }
 
-  .fourth-section input[type="text"],
-  .fourth-section input[type="email"],
-  .fourth-section select,
-  .fourth-section textarea {
-    width: 745px;
+  .ask-for input[type="text"],
+  .ask-for input[type="email"],
+  .ask-for select,
+  .ask-for textarea {
+    width: 89.3vw;
     margin-bottom: 30px;
     padding: 10px 12px;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     border: 2px solid #aace9b;
   }
 
-  .fourth-section select {
-    width: 773px;
+  .ask-for select {
+    min-width: 92vw;
   }
 
-  .fourth-section textarea {
+  .ask-for textarea {
     height: 200px;
   }
 
   .buttons {
-    margin-left: 433px;
-  }
+    width: 96%;
+}
 
   input[type="submit"],
   input[type="reset"] {
-    position: relative;
-    width: 150px;
+    width: 18vw;
     height: 50px;
     margin-left: 20px;
     font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
   }
 }
