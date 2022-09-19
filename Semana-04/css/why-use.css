@@ -1,23 +1,23 @@
-.third-section {
+.why-use {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
 
-.third-section h2 {
-  width: 133px;
-  height: 16px;
+.why-use h2 {
+  width: fit-content;
   margin-left: 30px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   padding-bottom: 5px;
   border-bottom: 2px solid #aace9b;
 }
 
 .why-info {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .why-info figure {
@@ -25,39 +25,37 @@
 }
 
 .why-info img {
-  width: 130px;
-  height: 95px;
+  max-width: 40.5vw;
   margin-left: 10px;
 }
 
 .why-info a {
-  margin-left: 10px;
+  margin-left: 5px;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
 }
 
 .why-info ul {
-    list-style-image: url("../assets/img/why-vector.png");
+  list-style-image: url("../../assets/img/why-vector.png");
   padding-left: 30px;
 }
 
 .why-info li {
   padding-top: 20px;
+  padding-left: 15px;
 }
 
 @media only screen and (min-width: 834px) {
-  .third-section {
+  .why-use {
     margin-top: 70px;
   }
   
-  .third-section h2 {
-    width: 300px;
-    height: 33px;
+  .why-use h2 {
     padding-bottom: 15px;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.375rem;
   }
   
   .why-info figure {
@@ -65,20 +63,14 @@
   }
   
   .why-info img {
-    width: 300px;
-    height: 210px;
     margin-left: 50px;
   }
   
   .why-info a {
     margin-left: 12px;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     font-weight: 700;
-  }
-  
-  .why-info ul {
-    padding-left: 55px;
   }
   
   .why-info li {

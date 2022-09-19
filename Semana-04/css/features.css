@@ -63,6 +63,10 @@ h3 {
     line-height: 2.375rem
   }
 
+  .features-blocks {
+    margin-top: 30px;
+  }
+
   .features-hours,
   .features-reports {
     margin-bottom: 65px;
