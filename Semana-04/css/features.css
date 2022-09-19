@@ -54,9 +54,6 @@
 }
 
 @media only screen and (min-width: 834px) {
-  .features {
-    margin-top: 70px;
-  }
 
   .features h2 {
     font-size: 2rem;
