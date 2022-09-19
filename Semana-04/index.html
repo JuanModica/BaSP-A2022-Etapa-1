@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="body.css" type="text/css">
-  <link rel="stylesheet" href="header.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
   <link rel="stylesheet" href="sidebar.css" type="text/css">
   <link rel="stylesheet" href="trackgenix.css" type="text/css">
   <link rel="stylesheet" href="features.css" type="text/css">
@@ -23,51 +23,51 @@
 <body>
   <header>
     <figure class="header-menu">
-      <img class="menu" src="../assets/img/menu.png" alt="" />
+      <img class="menu" src="../assets/img/menu.png" alt="menu-hamburguesa" />
     </figure>
-    <form action="" class="header-search">
-      <img class="header-search-img" src="../assets/img/search.png" alt="">
+    <div class="header-search">
+      <img class="header-search-img" src="../assets/img/search.png" alt="img-search">
       <input type="search" name="search" autocomplete="off" />
-    </form>
+    </div>
   </header>
-  <div class="container">
-    <nav>
-      <h2 class="nav-menu">Menu</h2>
-      <ul class="nav-menu-ul">
-        <li>
-          <a href="#"> Home</a>
-        </li>
-        <li>
-          <a href="#">SignUp</a>
-        </li>
-        <li>
-          <a href="#">Login</a>
-        </li>
-      </ul>
-      <h2 class="nav-contact">Contact</h2>
-      <ul class="nav-contact-ul">
-        <li>
-          <figure>
-            <img src="../assets/img/mail.png" alt="" />
-          </figure>
-          <a href="#" target="_blank">trackgenix@gmail.com</a>
-        </li>
-        <li>
-          <figure>
-            <img src="../assets/img/phone.png" alt="" />
-          </figure>
-          <a href="#" target="_blank">(+54) 4545-9999</a>
-        </li>
-        <li id="nav-contact-address">
-          <figure>
-            <img src="../assets/img/adress.png" alt="" />
-          </figure>
-          <a id="contact-address" href="#" target="_blank">1234 Somewhere Road #8254 Nashville.</a>
-        </li>
-      </ul>
-    </nav>
+  <!-- <div class="container">
+   <aside>
+     <h2 class="nav-menu">Menu</h2>
+     <ul class="nav-menu-ul">
+       <li>
+         <a href="#"> Home</a>
+       </li>
+       <li>
+         <a href="#">SignUp</a>
+       </li>
+       <li>
+         <a href="#">Login</a>
+       </li>
+     </ul>
+     <h2 class="nav-contact">Contact</h2>
+     <ul class="nav-contact-ul">
+       <li>
+         <figure>
+           <img src="../assets/img/mail.png" alt="" />
+         </figure>
+         <a href="#" target="_blank">trackgenix@gmail.com</a>
+       </li>
+       <li>
+         <figure>
+           <img src="../assets/img/phone.png" alt="" />
+         </figure>
+         <a href="#" target="_blank">(+54) 4545-9999</a>
+       </li>
+       <li id="nav-contact-address">
+         <figure>
+           <img src="../assets/img/adress.png" alt="" />
+         </figure>
+         <a id="contact-address" href="#" target="_blank">1234 Somewhere Road #8254 Nashville.</a>
+       </li>
+     </ul>
+   </aside>
     <main>
-      <section class="first-section">
+      <section class="trackgenix">
         <h1>TRACKGENIX</h1>
         <h2>Time control that simplifies your business</h2>
         <p>
@@ -75,10 +75,10 @@
           easiest, fastest and most intuitive way.
         </p>
         <a href="#" target="_blank"><button type="button">LEARN MORE</button></a>
-          <figure>
-            <img src="../assets/img/Imagen_principal.png" alt="" />
+        <figure>
+          <img src="../assets/img/Imagen_principal.png" alt="" />
       </section>
-      <section class="second-section">
+      <section class="features">
         <h2>Features</h2>
         <div class="features-blocks">
           <div class="features-group">
@@ -119,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="third-section">
+      <section class="why-use">
         <h2>Why use Trackgenix?</h2>
         <div class="why-info">
           <figure>
@@ -133,7 +133,7 @@
           </ul>
         </div>
       </section>
-      <section class="fourth-section">
+      <section class="ask-for">
         <h2>Ask for more information:</h2>
         <div class="info-underline"></div>
         <form action="#">
@@ -154,9 +154,9 @@
           </div>
         </form>
       </section>
-      <section class="fifth-section">
+      <section class="our-history">
         <h2>Our history</h2>
-        <div class="fifth-section-group">
+        <div class="our-history-group">
           <div class="paragraph">
             <p>
               Since 2012, we’ve helped countless companies across the globe build
@@ -171,7 +171,8 @@
             </p>
             <p>
               As the team grew from three to ten, and then from ten to twenty, they explored new partnerships with
-              major technologies to propel their growth. GigaTech currently has around 70 team members and exciting growth
+              major technologies to propel their growth. GigaTech currently has around 70 team members and exciting
+              growth
               goals ahead of them.
             </p>
           </div>
@@ -180,8 +181,8 @@
           </figure>
         </div>
       </section>
-      <section class="sixth-section">
-        <div class="sixth-section-parts product">
+      <section class="products">
+        <div class="products-parts product">
           <h3>PRODUCTS</h3>
           <ul>
             <li>
@@ -198,7 +199,7 @@
             </li>
           </ul>
         </div>
-        <div class="sixth-section-parts company">
+        <div class="products-parts company">
           <h3>COMPANY</h3>
           <ul>
             <li>
@@ -266,9 +267,9 @@
           <p>Copyright &#169 2022 GigaTech Software Solutions SA.</p>
           <P>All rights reserved.</P>
         </div>
-      </footer>
-    </main>
-  </div>
+      </footer> 
+    </main> 
+  </div>-->
 </body>
 
 </html>
