@@ -26,7 +26,7 @@
 
 .why-info img {
   max-width: 40.5vw;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .why-info a {
@@ -44,7 +44,6 @@
 
 .why-info li {
   padding-top: 20px;
-  padding-left: 15px;
 }
 
 @media only screen and (min-width: 834px) {
