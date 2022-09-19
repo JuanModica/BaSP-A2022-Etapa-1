@@ -31,6 +31,7 @@ var sentence = '';
 for (var i=0; i < asereje.length; i++) {
     sentence += asereje[i] + ' ';
 }
+
 alert(sentence);
 
 /* d. Crear una array vacío y con un bucle for de 10 repeticiones.
