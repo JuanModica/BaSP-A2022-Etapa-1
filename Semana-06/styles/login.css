@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.login-header img {
+  max-width: 3vw;
+}
+
+.login-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #373867;
+}
+.login-back {
+  margin-left: 15px;
+}
+.login-title {
+  position: relative;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px 0px 15px;
+}
+
+h3,
+a,
+p,
+label,
+button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.625rem;
+  text-decoration: none;
+  color: #373867;
+}
+
+button {
+  text-transform: uppercase;
+  background: #aace9b;
+  border-radius: 5px;
+  border: none;
+  width: 25vw;
+  height: 5vh;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+input {
+    width: 35vw;
+  padding: 4px;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+
+.login-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-account > p > a {
+  text-transform: uppercase;
+}
+
+.login-account a {
+  margin: 20px 0;
+}
+
+@media (min-width: 834px) {
+  .login-header img {
+    max-width: 2vw;
+  }
+
+  .login-header h3 {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  h3,
+  a,
+  p,
+  label,
+  button {
+    font-size: 0.75rem;
+  }
+
+  button {
+    width: 15vw;
+  }
+
+  input {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1512px) {
+  .card-login {
+    width: 30vw;
+  }
+
+  .login-header img {
+    max-width: 1.5vw;
+  }
+
+  .login-header h3 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding-bottom: 250px;
+  }
+
+  .login-inputs {
+    width: 15vw;
+    padding: 6px;
+  }
+
+  h3,
+  a,
+  p,
+  label,
+  button,
+  input {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 16vw;
+  }
+
+  button {
+    width: 10vw;
+  }
+}
