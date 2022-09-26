@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <script src="../javascript/login.js"></script>
     <title>Login Trackgenix</title>
 </head>
 
@@ -24,9 +25,11 @@
 <main class="container">
     <section class="card-login">
         <div class="login-header">
-            <div class="login-back">
-                <img src="../../assets/img/VectorBack.svg" alt="backToHome">
-            </div>
+            <figure class="login-back">
+                <a id="backHome">
+                    <img src="../../assets/img/VectorBack.svg" alt="backToHome">
+                </a>
+            </figure>
             <div class="login-title">
                 <h3>login</h3>
             </div>
@@ -35,17 +38,17 @@
             <form>
                 <div class="login-inputs">
                     <label for="email">Email</label>
-                    <input type="text" placeholder="Email">
+                    <input type="text" id="email" placeholder="Email">
                 </div>
                 <div class="login-inputs">
                     <label for="password">Password</label>
-                    <input type="text"  placeholder="***********">
+                    <input type="password" id="password" placeholder="***********">
                 </div>
                 <div class="login-account">
                     <p>Don't have an account? <a href="#">sign up </a></p>
                     <a href="#">Forgot your password?</a>
                 </div>
-                <button type="button">login</button>
+                <button type="submit" id="submitButton">login</button>
             </form>
         </div>
     </section>

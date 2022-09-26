@@ -77,10 +77,11 @@ label {
 }
 
 input {
-    width: 35vw;
+  width: 35vw;
   padding: 4px;
   margin: 5px 0;
   border: 1px solid black;
+  outline: none;
 }
 
 .login-account {
@@ -169,4 +170,18 @@ input {
   button {
     width: 10vw;
   }
+}
+
+.green-border {
+  border: 1.5px solid green;
+}
+
+.red-border {
+  border: 1.5px solid red;
+}
+
+.redP {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: red;
 }
