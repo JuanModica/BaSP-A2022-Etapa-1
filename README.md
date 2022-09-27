@@ -10,7 +10,7 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * Week 04 - **CSS/Flexbox** - Stylesheet language - Used for page styling and positioning.
 * Week 04 - **GitHub Pages** - Hosting - Used for online visualization of the project.
 * Week 05 - **JavaScript** - OOP language - Used to solve some exercises.
-
+* Week 06 - **JavaScript** - OOP language - Used to manipulate the DOM.
 ## WHAT WAS DONE 
 
 * **Week 01** - We used Figma fot the layout of the proposed problem page.
@@ -18,33 +18,22 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * **Week 03** - We used CSS as stylesheet language to style the page and try to recreate the layout as in Figma.
 * **Week 04** - We used CSS/Flexbox as a design model to achieve a responsive page.
 * **Week 05** - We used JavaScript to solve some exercises proposed in the course.
-
+* **Week 06** - We used JavaScript to manipulate the DOM and give some functionality to the elements.
 ## HOW TO USE
 
 * Go to the <a href="https://github.com/JuanModica/BaSP-A2022-Etapa-1.git" target="_blank">Repository.</a>
 * Click on Code, then on download ZIP.
 * Go to the ZIP and extract the files.
 * On Semana-04 folder open the index file in your browser.
-* Or you can follow this <a href="https://juanmodica.github.io/BaSP-A2022-Etapa-1/Semana-04/">Link</a>.
+* Or you can follow this <a href="https://juanmodica.github.io/BaSP-A2022-Etapa-1/Semana-06/">Link</a>.
 
 ## TUTORS 
 
-* Rodrigo Sibrins 
+* Alfonso Dalix
 
 ## AUXILIARY
 
-* Joaquin Leimeter
-
-## TEAM WORK 
-
-* Ale Tiscornia
-* Camila Diaz
-* Dino Stampella
-* Gonzalo Asencio 
-* Juan Cruz Módica
-* Maximiliano Delfino
-* Pilar Fernández
-* Tomas Bettini
+* Nicolás Blasco
 
 ## 
 
