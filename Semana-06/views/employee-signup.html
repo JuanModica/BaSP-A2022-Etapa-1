@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/employee-signup.css">
+    <script src="../javascript/employee-signup-js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <figure class="header-menu">
+            <img class="menu" src="../../assets/img/menu.png" alt="menu-hamburguesa" />
+        </figure>
+        <div class="header-logo">
+            <img src="../../assets/img/logotrack.svg" alt="logotrack">
+        </div>
+    </header>
+</body>
+<main class="container">
+    <section class="card-signup">
+        <div class="signup-header">
+            <figure class="signup-back">
+                <a id="backHome">
+                    <img src="../../assets/img/VectorBack.svg" alt="backToHome">
+                </a>
+            </figure>
+            <div class="signup-title">
+                <h3>sign up</h3>
+            </div>
+        </div>
+        <div>
+            <form>
+                <div class="inputs">
+                    <div class="signup-inputs">
+                        <label for="name">Name</label>
+                        <input type="text" class="input" id="name" placeholder="Name">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="suername">Surname</label>
+                        <input type="text" id="surname" placeholder="Surname">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" placeholder="DNI">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="phone" placeholder="Phone number">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Address">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Location">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="postalCode">Postal code</label>
+                        <input type="text" id="postalCode" placeholder="Postal code">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="***********">
+                    </div>
+                    <div class="signup-inputs">
+                        <label for="password">Repeat password</label>
+                        <input type="password" id="repeatPassword" placeholder="***********">
+                    </div>
+                </div>
+                <button type="submit" id="submitButton">Create</button>
+            </form>
+        </div>
+    </section>
+</main>
+</html>

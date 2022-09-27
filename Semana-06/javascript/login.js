@@ -4,31 +4,52 @@ window.onload = function () {
     backHome.setAttribute("href", "../views/index.html");
   };
 
-  var divInputs = document.getElementsByClassName("login-inputs");
-
-  // Get email y password
+  // Get email, password and button
   var emailValidation = document.getElementById("email");
   var passwordValidation = document.getElementById("password");
+  var submitButton = document.getElementById("submitButton");
 
-  // Parágrafo de error
+  // Email required
   var emailRequired = document.createElement("P");
-  emailRequired.innerHTML = "Email requerido.";
+  emailRequired.innerHTML = "Required email.";
   emailRequired.classList.add("redP");
 
-  // Parágrafo de error
+  // Password required
   var passwordRequired = document.createElement("P");
-  passwordRequired.innerHTML = "Password requerido.";
+  passwordRequired.innerHTML = "Required password.";
   passwordRequired.classList.add("redP");
 
-  //Email invalido
+  //Email invalid
   var emailWrongRegex = document.createElement("P");
-  emailWrongRegex.innerHTML = "Email invalido.";
+  emailWrongRegex.innerHTML = "Invalid email.";
   emailWrongRegex.classList.add("redP");
 
-  // Password invalido
+  // Password invalid
   var passwordWrong = document.createElement("P");
-  passwordWrong.innerHTML = "Password invalido.";
+  passwordWrong.innerHTML = "Invalid password.";
   passwordWrong.classList.add("redP");
+
+  // Valid has number
+  function hasNumber(string) {
+    var nums = "0123456789";
+    for (var i = 0; i < string.length; i++) {
+      if (nums.indexOf(string.charAt(i), 0) != -1) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // Valid has letters
+  function hasLetter(string) {
+    var nums = "abcdefghijkmnñlopqrstuvwxyz";
+    for (var i = 0; i < string.length; i++) {
+      if (nums.indexOf(string.charAt(i), 0) != -1) {
+        return true;
+      }
+    }
+    return false;
+  }
 
   emailValidation.onblur = function () {
     emailRegex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -46,19 +67,20 @@ window.onload = function () {
       emailValidation.setAttribute("required", "");
     }
   };
-  
 
   emailValidation.onfocus = function () {
     emailValidation.classList.remove("green-border", "red-border");
     emailValidation.replaceChildren(emailRequired, emailWrongRegex);
   };
-  
+
   passwordValidation.onblur = function () {
     if (passwordValidation.value.length >= 8) {
       passwordValidation.classList.add("green-border");
     } else if (
-      passwordValidation.value.length > 0 &&
-      passwordValidation.value.length < 8
+      (passwordValidation.value.length > 0 &&
+        passwordValidation.value.length < 8) ||
+      hasLetter(passwordValidation.value) == false ||
+      hasNumber(passwordValidation.value) == false
     ) {
       passwordValidation.classList.add("red-border");
       passwordValidation.setAttribute("required", "");
@@ -71,10 +93,9 @@ window.onload = function () {
 
   passwordValidation.onfocus = function () {
     passwordValidation.classList.remove("green-border", "red-border");
-    passwordValidation.replaceChildren(passwordRequired, passwordWrong)
+    passwordValidation.replaceChildren(passwordRequired, passwordWrong);
   };
 
-  var submitButton = document.getElementById("submitButton");
   submitButton.onclick = function (e) {
     e.preventDefault();
     if (
@@ -83,21 +104,35 @@ window.onload = function () {
     ) {
       emailValidation.parentElement.appendChild(emailRequired);
       passwordValidation.parentElement.appendChild(passwordRequired);
-      alert("Campos requeridos.");
-    } else if ((!emailRegex.test(emailValidation.value) &&
-    emailValidation.value.length > 0) && (passwordValidation.value.length > 0 &&
-      passwordValidation.value.length < 8)){
-      alert("Campos mal puestos.");
-    } else if (emailValidation.value.length == 0 && (passwordValidation.value.length > 0 &&
-      passwordValidation.value.length < 8)){
-        emailValidation.parentElement.appendChild(emailRequired);
-        alert("Email requido y password invalido.");
-      } else if ((!emailRegex.test(emailValidation.value) &&
-      emailValidation.value.length > 0) && passwordValidation.value.length == 0) {
-        passwordValidation.parentElement.appendChild(passwordRequired);
-        alert("Email invalido y password requerido.");
-      } else {
-        alert("Email: " + emailValidation.value + " Password: " + passwordValidation.value);
-      };
+      alert("Required fields.");
+    } else if (
+      !emailRegex.test(emailValidation.value) &&
+      emailValidation.value.length > 0 &&
+      passwordValidation.value.length > 0 &&
+      passwordValidation.value.length < 8
+    ) {
+      alert("Invalid fields.");
+    } else if (
+      emailValidation.value.length == 0 &&
+      passwordValidation.value.length > 0 &&
+      passwordValidation.value.length < 8
+    ) {
+      emailValidation.parentElement.appendChild(emailRequired);
+      alert("Required email and invalid password.");
+    } else if (
+      !emailRegex.test(emailValidation.value) &&
+      emailValidation.value.length > 0 &&
+      passwordValidation.value.length == 0
+    ) {
+      passwordValidation.parentElement.appendChild(passwordRequired);
+      alert("Invalid email and required password.");
+    } else {
+      alert(
+        "Email: " +
+          emailValidation.value +
+          " Password: " +
+          passwordValidation.value
+      );
+    }
   };
 };
