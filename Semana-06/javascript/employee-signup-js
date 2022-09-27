@@ -427,5 +427,7 @@ passwordRepeatRequired.classList.add("redP");
     if(nameValidation.value.length == 0 && surnameValidation.value.length == 0){
     }
   };
+
+  //No pude hacer el onclick, se me complico demasiado
 };
 
