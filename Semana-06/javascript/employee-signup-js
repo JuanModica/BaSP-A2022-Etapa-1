@@ -51,103 +51,96 @@ window.onload = function () {
     return false;
   }
 
-  // Input required
-  var inputRequired = document.createElement("p");
-  inputRequired.innerHTML = "Required field.";
-  inputRequired.classList.add("redP");
-  
-
   // Name invalid and required
   var nameWrong = document.createElement("p");
   nameWrong.innerHTML = "Invalid name.";
   nameWrong.classList.add("redP");
 
-  var nameRequired = document.createElement("P");
+  var nameRequired = document.createElement("p");
   nameRequired.innerHTML = "Required name.";
   nameRequired.classList.add("redP");
 
   // Surname invalido and required
-  var surnameWrong = document.createElement("P");
+  var surnameWrong = document.createElement("p");
   surnameWrong.innerHTML = "Invalid surname.";
   surnameWrong.classList.add("redP");
 
-  var surnameRequired = document.createElement("P");
+  var surnameRequired = document.createElement("p");
   surnameRequired.innerHTML = "Required surname.";
   surnameRequired.classList.add("redP");
 
   // DNI invalido and required
-  var dniWrong = document.createElement("P");
+  var dniWrong = document.createElement("p");
   dniWrong.innerHTML = "Invalid DNI.";
   dniWrong.classList.add("redP");
 
-  var dniRequired = document.createElement("P");
+  var dniRequired = document.createElement("p");
   dniRequired.innerHTML = "Required DNI.";
   dniRequired.classList.add("redP");
 
   // Birthday required
-  var birthdayRequired = document.createElement("P");
+  var birthdayRequired = document.createElement("p");
   birthdayRequired.innerHTML = "Required birthday.";
   birthdayRequired.classList.add("redP");
-
 
   // Phone invalido and required
   var phoneWrong = document.createElement("P");
   phoneWrong.innerHTML = "Invalid phone.";
   phoneWrong.classList.add("redP");
 
-  var phoneRequired = document.createElement("P");
+  var phoneRequired = document.createElement("p");
   phoneRequired.innerHTML = "Required phone.";
   phoneRequired.classList.add("redP");
 
   // Address invalido and required
-  var addressWrong = document.createElement("P");
+  var addressWrong = document.createElement("p");
   addressWrong.innerHTML = "Invalid address.";
   addressWrong.classList.add("redP");
 
-  var addressRequired = document.createElement("P");
+  var addressRequired = document.createElement("p");
   addressRequired.innerHTML = "Required address.";
   addressRequired.classList.add("redP");
 
   // Location invalido and required
-  var locationWrong = document.createElement("P");
+  var locationWrong = document.createElement("p");
   locationWrong.innerHTML = "Invalid location.";
   locationWrong.classList.add("redP");
 
-  var locationRequired = document.createElement("P");
+  var locationRequired = document.createElement("p");
   locationRequired.innerHTML = "Required location.";
   locationRequired.classList.add("redP");
 
   // Postal code invalido and required
-  var postalCodeWrong = document.createElement("P");
+  var postalCodeWrong = document.createElement("p");
   postalCodeWrong.innerHTML = "Invalid postal code.";
   postalCodeWrong.classList.add("redP");
 
-  var postalCodeRequired = document.createElement("P");
+  var postalCodeRequired = document.createElement("p");
   postalCodeRequired.innerHTML = "Required postal code.";
   postalCodeRequired.classList.add("redP");
 
   // Email invalido and required
-  var emailWrongRegex = document.createElement("P");
+  var emailWrongRegex = document.createElement("p");
   emailWrongRegex.innerHTML = "Invalid email.";
   emailWrongRegex.classList.add("redP");
 
-  var emailRequired = document.createElement("P");
+  var emailRequired = document.createElement("p");
   emailRequired.innerHTML = "Required email.";
   emailRequired.classList.add("redP");
 
   // Password invalido and required
-  var passwordWrong = document.createElement("P");
+  var passwordWrong = document.createElement("p");
   passwordWrong.innerHTML = "Invalid password.";
   passwordWrong.classList.add("redP");
 
-  var passwordRequired = document.createElement("P");
+  var passwordRequired = document.createElement("p");
   passwordRequired.innerHTML = "Required password.";
   passwordRequired.classList.add("redP");
 
-// Password repeat required 
-var passwordRepeatRequired = document.createElement("P");
-passwordRepeatRequired.innerHTML = "Required password.";
-passwordRepeatRequired.classList.add("redP");
+  // Password repeat required
+  var passwordRepeatRequired = document.createElement("p");
+  passwordRepeatRequired.innerHTML = "Required password.";
+  passwordRepeatRequired.classList.add("redP");
 
   nameValidation.onblur = function () {
     if (
@@ -165,7 +158,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       nameValidation.classList.add("red-border");
       nameValidation.setAttribute("required", "");
-      nameValidation.parentElement.appendChild(nameRequired)
+      nameValidation.parentElement.appendChild(nameRequired);
     }
   };
 
@@ -191,7 +184,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       surnameValidation.classList.add("red-border");
       surnameValidation.setAttribute("required", "");
-      surnameValidation.parentElement.appendChild(surnameRequired)
+      surnameValidation.parentElement.appendChild(surnameRequired);
     }
   };
 
@@ -216,7 +209,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       dniValidation.classList.add("red-border");
       dniValidation.setAttribute("required", "");
-      dniValidation.parentElement.appendChild(dniRequired)
+      dniValidation.parentElement.appendChild(dniRequired);
     }
   };
 
@@ -231,7 +224,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       birthdayValidation.classList.add("red-border");
       birthdayValidation.setAttribute("required", "");
-      birthdayValidation.parentElement.appendChild(birthdayRequired)
+      birthdayValidation.parentElement.appendChild(birthdayRequired);
     }
   };
 
@@ -258,7 +251,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       phoneValidation.classList.add("red-border");
       phoneValidation.setAttribute("required", "");
-      phoneValidation.parentElement.appendChild(phoneRequired)
+      phoneValidation.parentElement.appendChild(phoneRequired);
     }
   };
 
@@ -288,7 +281,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       addressValidation.classList.add("red-border");
       addressValidation.setAttribute("required", "");
-      addressValidation.parentElement.appendChild(addressRequired)
+      addressValidation.parentElement.appendChild(addressRequired);
     }
   };
 
@@ -310,7 +303,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       locationValidation.classList.add("red-border");
       locationValidation.setAttribute("required", "");
-      locationValidation.parentElement.appendChild(locationRequired)
+      locationValidation.parentElement.appendChild(locationRequired);
     }
   };
 
@@ -338,7 +331,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       postalCodeValidation.classList.add("red-border");
       postalCodeValidation.setAttribute("required", "");
-      postalCodeValidation.parentElement.appendChild(postalCodeRequired)
+      postalCodeValidation.parentElement.appendChild(postalCodeRequired);
     }
   };
 
@@ -361,7 +354,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       emailValidation.classList.add("red-border");
       emailValidation.setAttribute("required", "");
-      emailValidation.parentElement.appendChild(emailRequired)
+      emailValidation.parentElement.appendChild(emailRequired);
     }
   };
 
@@ -385,7 +378,7 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       passwordValidation.classList.add("red-border");
       passwordValidation.setAttribute("required", "");
-      passwordValidation.parentElement.appendChild(passwordRequired)
+      passwordValidation.parentElement.appendChild(passwordRequired);
     }
   };
 
@@ -413,21 +406,142 @@ passwordRepeatRequired.classList.add("redP");
     } else {
       repeatPasswordValidation.classList.add("red-border");
       repeatPasswordValidation.setAttribute("required", "");
-      repeatPasswordValidation.parentElement.appendChild(passwordRepeatRequired);
+      repeatPasswordValidation.parentElement.appendChild(
+        passwordRepeatRequired
+      );
     }
   };
 
   repeatPasswordValidation.onfocus = function () {
     repeatPasswordValidation.classList.remove("green-border", "red-border");
-    repeatPasswordValidation.replaceChildren(passwordWrong, passwordRepeatRequired);
+    repeatPasswordValidation.replaceChildren(
+      passwordWrong,
+      passwordRepeatRequired
+    );
   };
+
+  function addError(input) {
+    input.classList.add("red-border");
+    input.setAttribute("required", "");
+  }
+
+  function addErrorName() {
+    if (nameValidation.value === "") {
+      addError(nameValidation);
+      nameValidation.parentElement.appendChild(nameRequired);
+    }
+  }
+
+  function addErrorSurname() {
+    if (surnameValidation.value === "") {
+      addError(surnameValidation);
+      surnameValidation.parentElement.appendChild(surnameRequired);
+    }
+  }
+
+  function addErrorDni() {
+    if (dniValidation.value === "") {
+      addError(dniValidation);
+      dniValidation.parentElement.appendChild(dniRequired);
+    }
+  }
+
+  function addErrorBirth() {
+    if (birthdayValidation.value === "") {
+      addError(birthdayValidation);
+      birthdayValidation.parentElement.appendChild(birthdayRequired);
+    }
+  }
+
+  function addErrorPhone() {
+    if (phoneValidation.value === "") {
+      addError(phoneValidation);
+      phoneValidation.parentElement.appendChild(phoneRequired);
+    }
+  }
+
+  function addErrorAddress() {
+    if (addressValidation.value === "") {
+      addError(addressValidation);
+      addressValidation.parentElement.appendChild(addressRequired);
+    }
+  }
+
+  function addErrorLocation() {
+    if (locationValidation.value === "") {
+      addError(locationValidation);
+      locationValidation.parentElement.appendChild(locationRequired);
+    }
+  }
+
+  function addErrorPostalCode() {
+    if (postalCodeValidation.value === "") {
+      addError(postalCodeValidation);
+      postalCodeValidation.parentElement.appendChild(postalCodeRequired);
+    }
+  }
+
+  function addErrorEmail() {
+    if (emailValidation.value === "") {
+      addError(emailValidation);
+      emailValidation.parentElement.appendChild(emailRequired);
+    }
+  }
+
+  function addErrorPassword() {
+    if (passwordValidation.value === "") {
+      addError(passwordValidation);
+      passwordValidation.parentElement.appendChild(passwordRequired);
+    }
+  }
+
+  function addErrorRepeatP() {
+    if (repeatPasswordValidation.value === "") {
+      addError(repeatPasswordValidation);
+      repeatPasswordValidation.parentElement.appendChild(
+        passwordRepeatRequired
+      );
+    }
+  }
 
   submitButton.onclick = function (e) {
     e.preventDefault();
-    if(nameValidation.value.length == 0 && surnameValidation.value.length == 0){
+    if(nameValidation.value != "" &&
+    surnameValidation.value != "" &&
+    dniValidation.value != "" &&
+    birthdayValidation.value != "" &&
+    phoneValidation.value != "" &&
+    addressValidation.value != "" &&
+    locationValidation.value != "" &&
+    postalCodeValidation.value != "" &&
+    emailValidation.value != "" &&
+    passwordValidation.value != "" &&
+    repeatPasswordValidation.value != "") {
+      alert("Name: " + nameValidation.value + "\n" +
+      "Surname: " + surnameValidation.value + "\n" +
+      "DNi: " + dniValidation.value + "\n" +
+      "Birthday: " + birthdayValidation.value + "\n" +
+      "Phone: " + phoneValidation.value + "\n" +
+      "Address: " + addressValidation.value + "\n" +
+      "Location: " + locationValidation.value + "\n" +
+      "Postal code: " + postalCodeValidation.value + "\n" +
+      "Email: " + emailValidation.value + "\n" +
+      "Password: " + passwordValidation.value + "\n" +
+      "Repeat password: " + repeatPasswordValidation.value
+      );
+    } else {
+      addErrorName();
+      addErrorSurname();
+      addErrorDni();
+      addErrorBirth();
+      addErrorPhone();
+      addErrorAddress();
+      addErrorLocation();
+      addErrorPostalCode();
+      addErrorEmail();
+      addErrorPassword();
+      addErrorRepeatP();
+      alert("Invalid fields.");
     }
   };
-
-  //No pude hacer el onclick, se me complico demasiado
 };
-
