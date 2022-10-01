@@ -153,3 +153,18 @@ input[type="reset"] {
     width: 63%;
 }
 }
+
+.green-border {
+  border: 2px solid green !important;
+}
+
+.red-border {
+  border: 1.5px solid red !important;
+}
+
+.redP{
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  color: red;
+  margin-bottom: 15px;
+}

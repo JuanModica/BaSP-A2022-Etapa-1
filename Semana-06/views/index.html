@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../styles/our-history.css" type="text/css">
   <link rel="stylesheet" href="../styles/products.css" type="text/css">
   <link rel="stylesheet" href="../styles/footer.css" type="text/css">
+  <script src="../javascript/contact.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Landing Page Trackgenix</title>
 </head>
@@ -47,7 +48,7 @@
       <ul class="nav-contact-ul">
         <li>
           <figure>
-            <img src="../../assets/img/mail.png" alt="mail"/>
+            <img src="../../assets/img/mail.png" alt="mail" />
           </figure>
           <a href="#" target="_blank">trackgenix@gmail.com</a>
         </li>
@@ -132,20 +133,27 @@
       <section class="ask-for">
         <h2>Ask for more information:</h2>
         <form action="#">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <select name="category" required>
-            <option value="0" disabled selected>Category</option>
-            <option value="1">Employee</option>
-            <option value="2">Employee PM</option>
-            <option value="3">Admin</option>
-            <option value="4">SuperAdmin</option>
-            <i></i>
-          </select>
-          <textarea name="text" cols="30" rows="10" placeholder="Message" required></textarea>
+          <div>
+            <input id="name" type="text" name="name" placeholder="Name" />
+          </div>
+          <div>
+            <input type="text" name="email" id="email" placeholder="Email" />
+          </div>
+          <div>
+            <select name="category" id="category">
+              <option value="0" selected>Category</option>
+              <option value="1">Employee</option>
+              <option value="2">Employee PM</option>
+              <option value="3">Admin</option>
+              <option value="4">SuperAdmin</option>
+            </select>
+          </div>
+          <div>
+            <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
           <div class="buttons">
             <input type="reset" value="Cancel" />
-            <input type="submit" value="Send" />
+            <input type="submit" id="submitButton" value="Send" />
           </div>
         </form>
       </section>

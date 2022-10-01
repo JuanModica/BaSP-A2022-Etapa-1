@@ -31,9 +31,9 @@ window.onload = function () {
 
   // Valid has letters
   function hasLetter(string) {
-    var nums = "abcdefghijkmnñlopqrstuvwxyz";
+    var letters = "abcdefghijkmnñlopqrstuvwxyz";
     for (var i = 0; i < string.length; i++) {
-      if (nums.indexOf(string.charAt(i), 0) != -1) {
+      if (letters.indexOf(string.charAt(i), 0) != -1) {
         return true;
       }
     }
