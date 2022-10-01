@@ -169,7 +169,7 @@ window.onload = function () {
   }
 
   function addErrorCategory() {
-    if (categoryValidation.value === "") {
+    if (categoryValidation.value === "0") {
       addError(categoryValidation);
       categoryValidation.parentElement.appendChild(categoryRequired);
     }
