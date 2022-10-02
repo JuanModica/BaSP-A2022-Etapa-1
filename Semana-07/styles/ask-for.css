@@ -1,0 +1,170 @@
+.ask-for {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.ask-for h2 {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+
+.ask-for form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.ask-for input[type="text"],
+.ask-for input[type="email"],
+.ask-for select,
+.ask-for textarea {
+  width: 72.5vw;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  opacity: 0.5;
+  color: #aace9b;
+  border: 1px solid #aace9b;
+  border-radius: 4px;
+  outline: none;
+}
+
+::placeholder {
+  color: #aace9b;
+}
+
+.ask-for select {
+  width: 78.75vw;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(../../assets/img/select.png);
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+}
+
+.ask-for textarea {
+  height: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 25vw;
+  height: 35px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  border: 1px solid #aace9b;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  background: #aace9b;
+}
+
+input[type="reset"] {
+  color: #aace9b;
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 834px) {
+  .ask-for {
+    margin-top: 60px;
+  }
+
+  .ask-for h2 {
+    padding-bottom: 12px;
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+
+  .ask-for form {
+    margin-top: 40px;
+  }
+
+  .ask-for input[type="text"],
+  .ask-for input[type="email"],
+  .ask-for select,
+  .ask-for textarea {
+    width: 89.3vw;
+    margin-bottom: 30px;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    border: 2px solid #aace9b;
+  }
+
+  .ask-for select {
+    width: 92vw;
+  }
+
+  .ask-for textarea {
+    height: 200px;
+  }
+
+  .buttons {
+    width: 96%;
+}
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 18vw;
+    height: 50px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1512px) {
+  .ask-for input[type="text"],
+  .ask-for input[type="email"],
+  .ask-for textarea {
+    width: 43.6vw;
+  }
+
+  .ask-for select {
+    width: 45.5vw;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 9vw;
+    height: 50px;
+  }
+
+  .buttons {
+    width: 63%;
+}
+}
+
+.green-border {
+  border: 2px solid green !important;
+}
+
+.red-border {
+  border: 1.5px solid red !important;
+}
+
+.redP{
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  color: red;
+  margin-bottom: 15px;
+}

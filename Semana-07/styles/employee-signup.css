@@ -1,0 +1,203 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin-bottom: 100px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+.signup-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.signup-header img {
+  max-width: 3vw;
+}
+
+.signup-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #373867;
+}
+.signup-back {
+  margin-left: 15px;
+}
+.signup-title {
+  position: relative;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px 0px 15px;
+}
+
+h3,
+a,
+p,
+label,
+button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.625rem;
+  text-decoration: none;
+  color: #373867;
+}
+
+button {
+  text-transform: uppercase;
+  background: #aace9b;
+  border-radius: 5px;
+  border: none;
+  width: 25vw;
+  height: 5vh;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 0.875rem;
+}
+
+input {
+  width: 35vw;
+  padding: 4px;
+  margin: 5px 0;
+  border: 1px solid black;
+  outline: none;
+}
+
+.signup-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-account > p > a {
+  text-transform: uppercase;
+}
+
+.signup-account a {
+  margin: 20px 0;
+}
+
+@media (min-width: 834px) {
+  .card-signup {
+    width: 60vw;
+  }
+
+  .signup-header img {
+    max-width: 2vw;
+  }
+
+  .signup-header h3 {
+    font-size: 1.5rem;
+  }
+
+.inputs {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+  label {
+    font-size: 1rem;
+  }
+
+  h3,
+  a,
+  p,
+  label,
+  button {
+    font-size: 0.75rem;
+  }
+
+  button {
+    width: 15vw;
+  }
+
+  input {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1512px) {
+  .card-signup {
+    width: 40vw;
+  }
+
+  .signup-header img {
+    max-width: 1.5vw;
+  }
+
+  .signup-header h3 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding-bottom: 250px;
+  }
+
+  .signup-inputs {
+    width: 15vw;
+    padding: 6px;
+  }
+
+  h3,
+  a,
+  p,
+  label,
+  button,
+  input {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 16vw;
+  }
+
+  button {
+    width: 10vw;
+  }
+}
+
+.green-border {
+  border: 1.5px solid green;
+}
+
+.red-border {
+  border: 1.5px solid red;
+}
+
+.redP {
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: red;
+}

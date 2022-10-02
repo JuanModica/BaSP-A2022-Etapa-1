@@ -1,0 +1,88 @@
+.why-use {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.why-use h2 {
+  width: fit-content;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #aace9b;
+}
+
+.why-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.why-info figure {
+  padding-top: 20px;
+}
+
+.why-info img {
+  max-width: 40.5vw;
+  margin-left: 20px;
+}
+
+.why-info a {
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+
+.why-info ul {
+  list-style-image: url("../../assets/img/why-vector.png");
+  padding-left: 30px;
+}
+
+.why-info li {
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 834px) {
+  .why-use {
+    margin-top: 70px;
+  }
+  
+  .why-use h2 {
+    padding-bottom: 15px;
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+  
+  .why-info figure {
+    padding-top: 30px;
+  }
+  
+  .why-info img {
+    margin-left: 50px;
+  }
+  
+  .why-info a {
+    margin-left: 12px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+  
+  .why-info li {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1512px) {
+.why-info {
+  justify-content: flex-start;
+}
+
+.why-info ul {
+  margin-left: 100px;
+}
+}
