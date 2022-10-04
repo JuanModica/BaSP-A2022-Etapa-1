@@ -489,6 +489,7 @@ window.onload = function () {
     }
   }
 
+
   submitButton.onclick = function (e) {
     e.preventDefault();
     if (
@@ -550,7 +551,84 @@ window.onload = function () {
       addErrorEmail();
       addErrorPassword();
       addErrorRepeatP();
-      alert("Invalid fields.");
     }
+    var infoForm = {
+      name: nameValidation.value,
+      surname: surnameValidation.value,
+      dni: dniValidation.value,
+      birthday: birthdayValidation.value,
+      phone: phoneValidation.value,
+      address: addressValidation.value,
+      location: locationValidation.value,
+      postalCode: postalCodeValidation.value,
+      email: emailValidation.value,
+      password: passwordValidation.value,
+      repeatPassword: repeatPasswordValidation.value,
+    };
+
+    var dateOk =
+      birthdayValidation.value.substring(5, 7) +
+      "/" +
+      birthdayValidation.value.substring(8) +
+      "/" +
+      birthdayValidation.value.substring(0, 4);
+
+    fetch(
+      "https://basp-m2022-api-rest-server.herokuapp.com/signup/?email=" +
+        emailValidation.value +
+        "&password=" +
+        passwordValidation.value +
+        "&name=" +
+        nameValidation.value +
+        "&lastName=" +
+        surnameValidation.value +
+        "&dni=" +
+        dniValidation.value +
+        "&dob=" +
+        dateOk +
+        "&phone=" +
+        phoneValidation.value +
+        "&address=" +
+        addressValidation.value +
+        "&zip=" +
+        postalCodeValidation.value +
+        "&city=" +
+        locationValidation.value
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (response) {
+        if (response.success) {
+          alert(
+            response.msg +
+              "\nThe data has been sent\n" +
+              JSON.stringify(infoForm, null, 4)
+          );
+          localStorage.setItem("Name", nameValidation.value),
+            localStorage.setItem("Surname", surnameValidation.value),
+            localStorage.setItem("DNI", dniValidation.value),
+            localStorage.setItem("Birthday", dateOk),
+            localStorage.setItem("Phone", phoneValidation.value),
+            localStorage.setItem("Address", addressValidation.value),
+            localStorage.setItem("Location", locationValidation.value),
+            localStorage.setItem("Postal code", postalCodeValidation.value),
+            localStorage.setItem("Email", emailValidation.value),
+            localStorage.setItem("Password", passwordValidation.value),
+            localStorage.setItem(
+              "Confirm Password",
+              repeatPasswordValidation.value
+            );
+        } else {
+          var er = "" ;
+          for (var i = 0; i < response.errors.length; i++) {
+            er += response.errors[i].msg + "\n";
+          }
+          alert(er);
+        }
+      })
+      .catch(function (err) {
+        alert(err);
+      });
   };
 };
