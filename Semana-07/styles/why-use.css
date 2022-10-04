@@ -53,7 +53,7 @@
   
   .why-use h2 {
     padding-bottom: 15px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2.375rem;
   }
   
@@ -77,12 +77,21 @@
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
 .why-info {
   justify-content: flex-start;
 }
 
-.why-info ul {
-  margin-left: 100px;
+.why-info img {
+  max-width: 30vw;
 }
+
+.why-info ul {
+  margin-left: 50px;
+}
+
+.why-info a {
+  font-size: 1.25rem;
+}
+
 }

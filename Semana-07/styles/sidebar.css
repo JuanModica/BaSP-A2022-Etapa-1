@@ -2,7 +2,7 @@ aside {
   display: none;
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   aside {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ aside {
 
   aside h2 {
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     line-height: 2.2rem;
     padding-bottom: 30px;
     border-bottom: 3px solid #aace9b;
@@ -42,7 +42,7 @@ aside {
 
   .nav-menu-ul li {
     font-weight: 400;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
     padding-bottom: 35px;
     border-bottom: 2px solid #cdcccc;
@@ -51,10 +51,11 @@ aside {
   .nav-contact-ul li {
     display: flex;
     align-items: center;
+    margin-right: 15px;
     padding-bottom: 20px;
     font-weight: 400;
-    font-size: 1.625rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .nav-contact-ul img {

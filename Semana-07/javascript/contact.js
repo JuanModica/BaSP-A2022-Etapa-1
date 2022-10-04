@@ -1,12 +1,10 @@
 window.onload = function () {
-  // Get inputs
   var nameValidation = document.getElementById("name");
   var emailValidation = document.getElementById("email");
   var categoryValidation = document.getElementById("category");
   var textareaValidation = document.getElementById("textarea");
   var submitButton = document.getElementById("submitButton");
 
-  // Valid has number
   function hasNumber(string) {
     var nums = "0123456789";
     for (var i = 0; i < string.length; i++) {
@@ -17,7 +15,6 @@ window.onload = function () {
     return false;
   }
 
-  // Valid has letters
   function hasLetter(string) {
     var letters = "abcdefghijkmnñlopqrstuvwxyz";
     for (var i = 0; i < string.length; i++) {
@@ -28,7 +25,6 @@ window.onload = function () {
     return false;
   }
 
-  // Valid has capital letters
   function hasLetter(string) {
     var lettersC = "ABCDEFGHIJKMNÑLOPQRSTUVWXYZ";
     for (var i = 0; i < string.length; i++) {
@@ -39,7 +35,6 @@ window.onload = function () {
     return false;
   }
 
-  // Name invalid and required
   var nameWrong = document.createElement("p");
   nameWrong.innerHTML = "Invalid name.";
   nameWrong.classList.add("redP");
@@ -48,7 +43,6 @@ window.onload = function () {
   nameRequired.innerHTML = "Required name.";
   nameRequired.classList.add("redP");
 
-  // Email invalido and required
   var emailWrongRegex = document.createElement("p");
   emailWrongRegex.innerHTML = "Invalid email.";
   emailWrongRegex.classList.add("redP");
@@ -57,12 +51,10 @@ window.onload = function () {
   emailRequired.innerHTML = "Required email.";
   emailRequired.classList.add("redP");
 
-  // Category invalido and required
   var categoryRequired = document.createElement("p");
   categoryRequired.innerHTML = "Required category.";
   categoryRequired.classList.add("redP");
 
-  // Textarea invalido and required
   var textareaRequired = document.createElement("p");
   textareaRequired.innerHTML = "Required text.";
   textareaRequired.classList.add("redP");
@@ -116,9 +108,7 @@ window.onload = function () {
   };
 
   categoryValidation.onblur = function () {
-    if (
-      categoryValidation.value > 0
-    ) {
+    if (categoryValidation.value > 0) {
       categoryValidation.classList.add("green-border");
     } else {
       categoryValidation.classList.add("red-border");
@@ -133,9 +123,7 @@ window.onload = function () {
   };
 
   textareaValidation.onblur = function () {
-    if (
-      textareaValidation.value.length > 3
-    ) {
+    if (textareaValidation.value.length > 3) {
       textareaValidation.classList.add("green-border");
     } else {
       textareaValidation.classList.add("red-border");
@@ -184,14 +172,25 @@ window.onload = function () {
 
   submitButton.onclick = function (e) {
     e.preventDefault();
-    if(nameValidation.value != "" &&
-    emailValidation.value != "" &&
-    categoryValidation.value != "" &&
-    textareaValidation.value != "") {
-      alert("Name: " + nameValidation.value + "\n" +
-      "Email: " + emailValidation.value + "\n" +
-      "Category: " + categoryValidation.value + "\n" +
-      "Textarea: " + textareaValidation.value + "\n"
+    if (
+      nameValidation.value != "" &&
+      emailValidation.value != "" &&
+      categoryValidation.value != "" &&
+      textareaValidation.value != ""
+    ) {
+      alert(
+        "Name: " +
+          nameValidation.value +
+          "\n" +
+          "Email: " +
+          emailValidation.value +
+          "\n" +
+          "Category: " +
+          categoryValidation.value +
+          "\n" +
+          "Textarea: " +
+          textareaValidation.value +
+          "\n"
       );
     } else {
       addErrorName();

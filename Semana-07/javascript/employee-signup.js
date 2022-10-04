@@ -4,7 +4,6 @@ window.onload = function () {
     backHome.setAttribute("href", "../views/index.html");
   };
 
-  // Get inputs
   var nameValidation = document.getElementById("name");
   var surnameValidation = document.getElementById("surname");
   var dniValidation = document.getElementById("dni");
@@ -18,7 +17,6 @@ window.onload = function () {
   var repeatPasswordValidation = document.getElementById("repeatPassword");
   var submitButton = document.getElementById("submitButton");
 
-  // Valid has number
   function hasNumber(string) {
     var nums = "0123456789";
     for (var i = 0; i < string.length; i++) {
@@ -29,7 +27,6 @@ window.onload = function () {
     return false;
   }
 
-  // Valid has letters
   function hasLetter(string) {
     var letters = "abcdefghijkmnñlopqrstuvwxyz";
     for (var i = 0; i < string.length; i++) {
@@ -40,7 +37,6 @@ window.onload = function () {
     return false;
   }
 
-  // Has space
   function blankSpace(value) {
     var space = " ";
     for (var i = 0; i < value.length; i++) {
@@ -51,7 +47,6 @@ window.onload = function () {
     return false;
   }
 
-  // Name invalid and required
   var nameWrong = document.createElement("p");
   nameWrong.innerHTML = "Invalid name.";
   nameWrong.classList.add("redP");
@@ -60,7 +55,6 @@ window.onload = function () {
   nameRequired.innerHTML = "Required name.";
   nameRequired.classList.add("redP");
 
-  // Surname invalido and required
   var surnameWrong = document.createElement("p");
   surnameWrong.innerHTML = "Invalid surname.";
   surnameWrong.classList.add("redP");
@@ -69,7 +63,6 @@ window.onload = function () {
   surnameRequired.innerHTML = "Required surname.";
   surnameRequired.classList.add("redP");
 
-  // DNI invalido and required
   var dniWrong = document.createElement("p");
   dniWrong.innerHTML = "Invalid DNI.";
   dniWrong.classList.add("redP");
@@ -78,12 +71,10 @@ window.onload = function () {
   dniRequired.innerHTML = "Required DNI.";
   dniRequired.classList.add("redP");
 
-  // Birthday required
   var birthdayRequired = document.createElement("p");
   birthdayRequired.innerHTML = "Required birthday.";
   birthdayRequired.classList.add("redP");
 
-  // Phone invalido and required
   var phoneWrong = document.createElement("P");
   phoneWrong.innerHTML = "Invalid phone.";
   phoneWrong.classList.add("redP");
@@ -92,7 +83,6 @@ window.onload = function () {
   phoneRequired.innerHTML = "Required phone.";
   phoneRequired.classList.add("redP");
 
-  // Address invalido and required
   var addressWrong = document.createElement("p");
   addressWrong.innerHTML = "Invalid address.";
   addressWrong.classList.add("redP");
@@ -101,7 +91,6 @@ window.onload = function () {
   addressRequired.innerHTML = "Required address.";
   addressRequired.classList.add("redP");
 
-  // Location invalido and required
   var locationWrong = document.createElement("p");
   locationWrong.innerHTML = "Invalid location.";
   locationWrong.classList.add("redP");
@@ -110,7 +99,6 @@ window.onload = function () {
   locationRequired.innerHTML = "Required location.";
   locationRequired.classList.add("redP");
 
-  // Postal code invalido and required
   var postalCodeWrong = document.createElement("p");
   postalCodeWrong.innerHTML = "Invalid postal code.";
   postalCodeWrong.classList.add("redP");
@@ -119,7 +107,6 @@ window.onload = function () {
   postalCodeRequired.innerHTML = "Required postal code.";
   postalCodeRequired.classList.add("redP");
 
-  // Email invalido and required
   var emailWrongRegex = document.createElement("p");
   emailWrongRegex.innerHTML = "Invalid email.";
   emailWrongRegex.classList.add("redP");
@@ -128,7 +115,6 @@ window.onload = function () {
   emailRequired.innerHTML = "Required email.";
   emailRequired.classList.add("redP");
 
-  // Password invalido and required
   var passwordWrong = document.createElement("p");
   passwordWrong.innerHTML = "Invalid password.";
   passwordWrong.classList.add("redP");
@@ -137,7 +123,6 @@ window.onload = function () {
   passwordRequired.innerHTML = "Required password.";
   passwordRequired.classList.add("redP");
 
-  // Password repeat required
   var passwordRepeatRequired = document.createElement("p");
   passwordRepeatRequired.innerHTML = "Required password.";
   passwordRepeatRequired.classList.add("redP");
@@ -506,28 +491,52 @@ window.onload = function () {
 
   submitButton.onclick = function (e) {
     e.preventDefault();
-    if(nameValidation.value != "" &&
-    surnameValidation.value != "" &&
-    dniValidation.value != "" &&
-    birthdayValidation.value != "" &&
-    phoneValidation.value != "" &&
-    addressValidation.value != "" &&
-    locationValidation.value != "" &&
-    postalCodeValidation.value != "" &&
-    emailValidation.value != "" &&
-    passwordValidation.value != "" &&
-    repeatPasswordValidation.value != "") {
-      alert("Name: " + nameValidation.value + "\n" +
-      "Surname: " + surnameValidation.value + "\n" +
-      "DNi: " + dniValidation.value + "\n" +
-      "Birthday: " + birthdayValidation.value + "\n" +
-      "Phone: " + phoneValidation.value + "\n" +
-      "Address: " + addressValidation.value + "\n" +
-      "Location: " + locationValidation.value + "\n" +
-      "Postal code: " + postalCodeValidation.value + "\n" +
-      "Email: " + emailValidation.value + "\n" +
-      "Password: " + passwordValidation.value + "\n" +
-      "Repeat password: " + repeatPasswordValidation.value
+    if (
+      nameValidation.value != "" &&
+      surnameValidation.value != "" &&
+      dniValidation.value != "" &&
+      birthdayValidation.value != "" &&
+      phoneValidation.value != "" &&
+      addressValidation.value != "" &&
+      locationValidation.value != "" &&
+      postalCodeValidation.value != "" &&
+      emailValidation.value != "" &&
+      passwordValidation.value != "" &&
+      repeatPasswordValidation.value != ""
+    ) {
+      alert(
+        "Name: " +
+          nameValidation.value +
+          "\n" +
+          "Surname: " +
+          surnameValidation.value +
+          "\n" +
+          "DNi: " +
+          dniValidation.value +
+          "\n" +
+          "Birthday: " +
+          birthdayValidation.value +
+          "\n" +
+          "Phone: " +
+          phoneValidation.value +
+          "\n" +
+          "Address: " +
+          addressValidation.value +
+          "\n" +
+          "Location: " +
+          locationValidation.value +
+          "\n" +
+          "Postal code: " +
+          postalCodeValidation.value +
+          "\n" +
+          "Email: " +
+          emailValidation.value +
+          "\n" +
+          "Password: " +
+          passwordValidation.value +
+          "\n" +
+          "Repeat password: " +
+          repeatPasswordValidation.value
       );
     } else {
       addErrorName();

@@ -69,7 +69,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   footer {
     width: 73.5vw;
     margin-top: 95px;

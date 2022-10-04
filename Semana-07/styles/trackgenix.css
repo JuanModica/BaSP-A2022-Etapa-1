@@ -69,13 +69,17 @@
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   .trackgenix {
     flex-wrap: wrap;
-    height: 550px;
+    height: 400px;
     margin-left: 30px;
     align-items: flex-start;
     align-content: flex-start;
+  }
+
+  .trackgenix img {
+    width: 25vw;
   }
 
   .trackgenix h1,
@@ -86,20 +90,20 @@
   }
 
   .trackgenix h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     letter-spacing: 0.3em;
   }
 
   .trackgenix h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.75;
     text-transform: uppercase;
   }
 
   .trackgenix p {
     width: 40.8vw;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: start;
     order: 0;
@@ -114,10 +118,10 @@
   }
 
   .trackgenix button {
-    width: 11vw;
-    height: 70px;
+    width: 15vw;
+    height: 55px;
     font-weight: 500;
-    font-size: o.9rem;
+    font-size: 0.9rem;
     line-height: 1.125rem;
     color: #aace9b;
     background: #ffffff;

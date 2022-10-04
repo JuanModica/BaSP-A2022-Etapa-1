@@ -89,7 +89,7 @@ input[type="reset"] {
 
   .ask-for h2 {
     padding-bottom: 12px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2.375rem;
   }
 
@@ -132,15 +132,15 @@ input[type="reset"] {
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   .ask-for input[type="text"],
   .ask-for input[type="email"],
   .ask-for textarea {
-    width: 43.6vw;
+    width: 45vw;
   }
 
   .ask-for select {
-    width: 45.5vw;
+    width: 47.5vw;
   }
 
   input[type="submit"],
@@ -150,7 +150,7 @@ input[type="reset"] {
   }
 
   .buttons {
-    width: 63%;
+    width: 67%;
 }
 }
 

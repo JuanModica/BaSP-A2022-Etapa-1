@@ -8,7 +8,7 @@ a {
     color: #373867;
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   
     .container {
         display: flex

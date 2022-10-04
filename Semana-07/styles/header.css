@@ -39,7 +39,7 @@ width: 30vw;
 
 }
 
-@media (min-width: 1512px) {
+@media (min-width: 1024px) {
 
   header {
       min-height: 126px;

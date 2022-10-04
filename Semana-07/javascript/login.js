@@ -4,32 +4,26 @@ window.onload = function () {
     backHome.setAttribute("href", "../views/index.html");
   };
 
-  // Get email, password and button
   var emailValidation = document.getElementById("email");
   var passwordValidation = document.getElementById("password");
   var submitButton = document.getElementById("submitButton");
 
-  // Email required
   var emailRequired = document.createElement("P");
   emailRequired.innerHTML = "Required email.";
   emailRequired.classList.add("redP");
 
-  // Password required
   var passwordRequired = document.createElement("P");
   passwordRequired.innerHTML = "Required password.";
   passwordRequired.classList.add("redP");
 
-  //Email invalid
   var emailWrongRegex = document.createElement("P");
   emailWrongRegex.innerHTML = "Invalid email.";
   emailWrongRegex.classList.add("redP");
 
-  // Password invalid
   var passwordWrong = document.createElement("P");
   passwordWrong.innerHTML = "Invalid password.";
   passwordWrong.classList.add("redP");
 
-  // Valid has number
   function hasNumber(string) {
     var nums = "0123456789";
     for (var i = 0; i < string.length; i++) {
@@ -40,7 +34,6 @@ window.onload = function () {
     return false;
   }
 
-  // Valid has letters
   function hasLetter(string) {
     var nums = "abcdefghijkmnñlopqrstuvwxyz";
     for (var i = 0; i < string.length; i++) {
@@ -74,13 +67,16 @@ window.onload = function () {
   };
 
   passwordValidation.onblur = function () {
-    if (passwordValidation.value.length >= 8) {
+    if (
+      passwordValidation.value.length >= 8 &&
+      hasLetter(passwordValidation.value) == true &&
+      hasNumber(passwordValidation.value) == true
+    ) {
       passwordValidation.classList.add("green-border");
     } else if (
-      (passwordValidation.value.length > 0 &&
-        passwordValidation.value.length < 8) ||
-      hasLetter(passwordValidation.value) == false ||
-      hasNumber(passwordValidation.value) == false
+      passwordValidation.value.length > 0 &&
+      (hasLetter(passwordValidation.value) == false ||
+        hasNumber(passwordValidation.value) == false)
     ) {
       passwordValidation.classList.add("red-border");
       passwordValidation.setAttribute("required", "");
@@ -96,43 +92,116 @@ window.onload = function () {
     passwordValidation.replaceChildren(passwordRequired, passwordWrong);
   };
 
-  submitButton.onclick = function (e) {
-    e.preventDefault();
+  function loginValidate() {
     if (
       emailValidation.value.length == 0 &&
       passwordValidation.value.length == 0
     ) {
       emailValidation.parentElement.appendChild(emailRequired);
+      emailValidation.classList.add("red-border");
+      emailValidation.setAttribute("required", "");
       passwordValidation.parentElement.appendChild(passwordRequired);
-      alert("Required fields.");
+      passwordValidation.classList.add("red-border");
+      passwordValidation.setAttribute("required", "");
     } else if (
-      !emailRegex.test(emailValidation.value) &&
       emailValidation.value.length > 0 &&
+      emailValidation.value != emailOk &&
       passwordValidation.value.length > 0 &&
-      passwordValidation.value.length < 8
+      passwordValidation.value != passwordOk
     ) {
-      alert("Invalid fields.");
+      emailValidation.parentElement.appendChild(emailWrongRegex);
+      emailValidation.classList.add("red-border");
+      emailValidation.setAttribute("required", "");
+      passwordValidation.parentElement.appendChild(passwordWrong);
+      passwordValidation.classList.add("red-border");
+      passwordValidation.setAttribute("required", "");
     } else if (
-      emailValidation.value.length == 0 &&
-      passwordValidation.value.length > 0 &&
-      passwordValidation.value.length < 8
-    ) {
-      emailValidation.parentElement.appendChild(emailRequired);
-      alert("Required email and invalid password.");
-    } else if (
-      !emailRegex.test(emailValidation.value) &&
       emailValidation.value.length > 0 &&
-      passwordValidation.value.length == 0
+      emailValidation.value != emailOk &&
+      passwordValidation.value == passwordOk
     ) {
-      passwordValidation.parentElement.appendChild(passwordRequired);
-      alert("Invalid email and required password.");
-    } else {
-      alert(
-        "Email: " +
-          emailValidation.value +
-          " Password: " +
-          passwordValidation.value
-      );
+      emailValidation.parentElement.appendChild(emailWrongRegex);
+      emailValidation.classList.add("red-border");
+      emailValidation.setAttribute("required", "");
+    } else if (
+      emailValidation.value == emailOk &&
+      passwordValidation.value.length > 0 &&
+      passwordValidation.value != passwordOk
+    ) {
+      passwordValidation.parentElement.appendChild(passwordWrong);
+      passwordValidation.classList.add("red-border");
+      passwordValidation.setAttribute("required", "");
     }
+  }
+
+  submitButton.onclick = function (e) {
+    e.preventDefault();
+    var url =
+      "https://basp-m2022-api-rest-server.herokuapp.com/login?email=" +
+      emailValidation.value +
+      "&password=" +
+      passwordValidation.value;
+    emailOk = "rose@radiumrocket.com";
+    passwordOk = "BaSP2022";
+    loginValidate();
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        if (data.success) {
+          alert(
+            "Request successful:\n" +
+              data.msg +
+              "\nEmail: " +
+              emailValidation.value +
+              "\nPassword: " +
+              passwordValidation.value
+          );
+        } else {
+          if (
+            emailValidation.value != emailOk &&
+            passwordValidation.value != passwordOk &&
+            emailValidation.value.length > 0 &&
+            passwordValidation.value.length > 0
+          ) {
+            alert(
+              "Login error: " +
+                data.msg +
+                "\nEmail: " +
+                emailValidation.value +
+                "\nPassword: " +
+                passwordValidation.value
+            );
+          } else if (
+            emailValidation.value != emailOk &&
+            passwordValidation.value == passwordOk &&
+            emailValidation.value.length > 0
+          ) {
+            alert(
+              "Login error: " + data.msg + "\nEmail: " + emailValidation.value
+            );
+          } else if (
+            emailValidation.value == emailOk &&
+            passwordValidation.value != passwordOk &&
+            passwordValidation.value.length > 0
+          ) {
+            alert(
+              "Login error: " +
+                data.msg +
+                "\nPassword: " +
+                passwordValidation.value
+            );
+          } else if (
+            emailValidation.value.length == 0 &&
+            passwordValidation.value.length == 0
+          ) {
+            alert("Login error: " + data.msg + "\nErrors: Empty fields.");
+          }
+        }
+      })
+      .catch(function (error) {
+        alert(error);
+      });
   };
 };

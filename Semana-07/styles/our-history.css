@@ -47,7 +47,7 @@
   }
 
   .our-history h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2.375rem;
     padding-bottom: 15px;
   }
@@ -73,10 +73,10 @@
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1024px) {
   .our-history div img {
     width: 31vw;
-    margin-left: 35px;
+    margin-left: 25px;
   }
 
   .our-history-group {
@@ -91,5 +91,6 @@
 
   .our-history p {
     text-align: start;
+    font-size: 1.25rem;
   }
 }
