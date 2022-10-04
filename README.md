@@ -20,7 +20,7 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * **Week 04** - We used CSS/Flexbox as a design model to achieve a responsive page.
 * **Week 05** - We used JavaScript to solve some exercises proposed in the course.
 * **Week 06** - We used JavaScript to manipulate the DOM and give some functionality to the elements.
-* **Week 07** - We use javascript to handle http requests with fetch. 
+* **Week 07** - We used javascript to handle http requests with fetch. 
 ## HOW TO USE
 
 * Go to the <a href="https://github.com/JuanModica/BaSP-A2022-Etapa-1.git" target="_blank">Repository.</a>
