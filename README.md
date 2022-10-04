@@ -26,7 +26,7 @@ Trackgenix is an application designed for human resources, making it easy to rec
 * Go to the <a href="https://github.com/JuanModica/BaSP-A2022-Etapa-1.git" target="_blank">Repository.</a>
 * Click on Code, then on download ZIP.
 * Go to the ZIP and extract the files.
-* On Semana-04 folder open the index file in your browser.
+* On Semana-07 folder open the index file in your browser.
 * Or you can follow this <a href="https://juanmodica.github.io/BaSP-A2022-Etapa-1/Semana-07/views/index.html">Link</a>.
 
 ## TUTORS 
